@@ -72,7 +72,7 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 - **zInspector** - Live count of geometry types with quick select, isolate, hide, lock and delete; `zInspectorToggle` switches its HUD.
 - **zLevelTag** - Defines building levels by elevation and tags every object with its level; export by group, block or layer.
 - **zBlockManager** - Batch rename, re-layer, color code, rebase, reset scale, purge and merge block definitions.
-- **zSection** / **zSectionManager** - Live section lines with a manager; a section can also be cut into real geometry.
+- **zSection** / **zSectionManager** - Jogged section lines (a polyline with jogs) with a manager; a section can also be cut into real geometry.
 - **zImportDWG** - Sorts the layers of an imported Revit DWG into a standard layer tree.
 - **zRevitMapping** - Stores a Revit category and type for each ZTools command and stamps it on what the command bakes, for Rhino.Inside.Revit workflows.
 - **zThemeSettings** - Sets the colors and light or dark mode of all ZTools dialogs.
