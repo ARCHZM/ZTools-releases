@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.1.1-beta1 (pre-release)
+## 0.1.1-beta2 (pre-release)
+
+Same tools as 0.1.1-beta1, which has been withdrawn. The package description is now a short list of the toolbar groups, and the package homepage points to this repository.
+
+## 0.1.1-beta1 (pre-release, withdrawn)
 
 First public pre-release of ZTools for Rhino 8 (Windows). It replaces an earlier test upload (0.1.0), which has been withdrawn.
 
