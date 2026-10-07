@@ -2,14 +2,14 @@
 
 A collection of parametric modeling and analysis tools for architects and designers working in Rhino 8 for Windows: stairs, railings, windows and doors, roofs, curtain walls, sections, dimensions, site context, daylight, shadow and view analysis, block and level management, and small utilities.
 
-**Status:** pre-release (`0.1.0-beta1`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
+**Status:** pre-release (`0.1.1-beta1`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
 
 > Pre-release means some edges are still rough. Keep a backup of your file before running batch tools, and use Undo if a result is not what you expected.
 
 ## Install
 
 1. In Rhino 8, run `_PackageManager`.
-2. Turn on the option to show pre-release versions. Pre-release packages are hidden by default. *(verify the exact label before publishing)*
+2. Tick **Include pre-releases** at the bottom of the Package Manager window. Pre-release packages are hidden unless it is ticked.
 3. Search for `ztools`, install it, and restart Rhino.
 4. Run `zTools` to show the toolbar, or type any command below.
 
@@ -108,4 +108,4 @@ Terrain: this work is based on API services provided by the OpenTopography Facil
 
 ## Changelog
 
-- **0.1.0-beta1**: first public pre-release.
+- **0.1.1-beta1**: first public pre-release.

@@ -1,8 +1,8 @@
 # Changelog
 
-## 0.1.0-beta1 (pre-release)
+## 0.1.1-beta1 (pre-release)
 
-First public pre-release of ZTools for Rhino 8 (Windows).
+First public pre-release of ZTools for Rhino 8 (Windows). It replaces an earlier test upload (0.1.0), which has been withdrawn.
 
 - Parametric tools for stairs, railings, windows and doors, roofs, curtain walls and louvers.
 - Site tools: `zSiteContext` builds terrain with contours, buildings, roads, railways, water and green space for a rectangle you draw on a map page in your web browser (with address search and an adjustable box). `zSiteModifier` reshapes a site surface.
