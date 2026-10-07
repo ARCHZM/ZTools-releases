@@ -1,0 +1,42 @@
+ZTools End User License Agreement (draft, v0.1)
+
+Copyright (c) 2026 Ze Meng. All rights reserved.
+
+1. Grant. You may install and use ZTools free of charge, for personal or commercial
+   work, on any number of your own computers.
+
+2. Restrictions. You may not (a) reverse engineer, decompile or disassemble ZTools,
+   except where the law allows it despite this restriction; (b) copy, redistribute,
+   sell, rent or sublicense ZTools or any part of it; (c) remove copyright notices.
+
+3. Ownership. ZTools is licensed, not sold. All rights not expressly granted are
+   reserved by the author. Third-party components (for example ClosedXML, DuckDB.NET,
+   DotSpatial.Projections, Svg, ExCSS, SixLabors.Fonts) remain under their own licenses.
+   OpenStreetMap is a trademark of the OpenStreetMap Foundation.
+   ZTools is not endorsed by or affiliated with the OpenStreetMap Foundation.
+
+4. Network features. zSiteContext contacts third-party services to download data for the
+   area you choose: OpenTopography (terrain; you enter your own access token) and Overture
+   Maps data on Amazon S3 (buildings, roads, railways, water, green space). The first time
+   it runs, DuckDB, which reads that data, downloads two extensions from DuckDB's extension
+   server. The site area is picked on a map page that ZTools serves from your own computer and
+   opens in your web browser; the page loads a map library from unpkg.com and map tiles
+   from OpenFreeMap, and an address you type is sent through ZTools to Nominatim
+   (OpenStreetMap's search service). Those services are under their own terms, and the
+   page sends only the rectangle you draw back to ZTools. Nothing else is sent, and ZTools collects no usage data. An
+   OpenTopography token is stored on your own computer and is for your own use only. Those
+   services have their own terms and limits, which you must follow; data from OpenStreetMap
+   and Overture is licensed under the Open Database License and must keep its attribution
+   (ZTools writes it into the zSiteContext layer's user text).
+
+5. Your models. ZTools writes tags, scores and settings into the objects of your own
+   Rhino files (user text and user dictionaries) and into Rhino's settings. Keep a
+   backup before running batch tools; most actions can be undone with Undo.
+
+6. No warranty. ZTools is provided "as is", without warranty of any kind. The author
+   is not liable for any damage or data loss arising from its use. This is a pre-release.
+
+7. Changes. The author may change these terms or move ZTools to a paid license in a
+   future version. A version you already installed keeps the terms it came with.
+
+Contact: see https://www.ze-meng.com/about
