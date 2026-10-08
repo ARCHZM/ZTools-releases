@@ -81,9 +81,7 @@ Longer guides for each tool will be added during the pre-release. Tell me which 
 
 ## Manuals
 
-Step-by-step guides for individual tools are collected in the [docs](docs) folder:
-
-- [zAnalyzeTerrain](docs/zAnalyzeTerrain.md): analyze elevation, slope and aspect, contour lines and analysis points.
+A step-by-step guide for every tool is in the [docs](docs/README.md) folder.
 
 ## What ZTools does with your data
 
