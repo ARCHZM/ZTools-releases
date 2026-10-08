@@ -79,6 +79,12 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 
 Longer guides for each tool will be added during the pre-release. Tell me which ones you need first.
 
+## Manuals
+
+Step-by-step guides for individual tools are collected in the [docs](docs) folder:
+
+- [zAnalyzeTerrain](docs/zAnalyzeTerrain.md): analyze elevation, slope and aspect, contour lines and analysis points.
+
 ## What ZTools does with your data
 
 - **Network.** Only `zSiteContext` goes online, and only for the area you choose and the layers you tick:
