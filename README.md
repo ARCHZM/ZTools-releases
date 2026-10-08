@@ -13,7 +13,9 @@ A collection of parametric modeling and analysis tools for architects and design
 3. Search for `ztools`, install it, and restart Rhino.
 4. Run `zTools` to show the toolbar, or type any command below.
 
-Requirements: Rhino 8 for Windows. Mac is not supported yet.
+Requirements: Rhino 8 for Windows, **version 8.21.25188.17001 (Service Release 21) or newer**. Mac is not supported yet.
+
+**If you cannot find `ztools` in the Package Manager, the most likely reason is your Rhino version.** The Package Manager only lists packages built for the Rhino version you run, so on an older Rhino 8 the package does not appear at all. Check your version with `_About` (or Help, About Rhino), update Rhino to the latest Service Release (Help, Check for Updates), restart Rhino and search again. Also make sure **Include pre-releases** is ticked.
 
 ## What is inside
 
