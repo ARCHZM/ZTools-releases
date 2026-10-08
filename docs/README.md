@@ -4,6 +4,8 @@ Step-by-step guides for each tool. Every guide explains what the tool is for, ho
 
 Distances in these guides are given in feet and inches unless a metric option is named.
 
+ZTools needs Rhino 8 for Windows, version 8.21.25188.17001 (Service Release 21) or newer. If `ztools` does not appear in the Package Manager, update Rhino to the latest Service Release first (see the [main page](../README.md)).
+
 ## Stairs and railings
 
 - [zStairByRegion](zStairByRegion.md): Stair that folds into a rectangular region (straight, L, U, Z, C)
