@@ -14,8 +14,8 @@ A row at the top has three presets, **Tiny**, **Small** and **Large Object**. Th
 
 ## TEXT
 
-- **Unit Format**: **Degrees**, **Radians** or **DMS** (degrees, minutes, seconds).
-- **Text Size**: the height of the dimension text.
+- TEXT **Unit**: **Degrees**, **Radians** or **DMS** (degrees, minutes, seconds).
+- TEXT **Size**: the height of the dimension text.
 - **Decimal Places**: 1 by default. In DMS mode it sets the decimals of the seconds.
 
 ## DIMENSION
@@ -25,7 +25,7 @@ A row at the top has three presets, **Tiny**, **Small** and **Large Object**. Th
 
 ## ARROW
 
-- **Arrow Style / Arrow Size**: the style and size of the arrows at the ends of the arc.
+- **Arrow Style / ARROW Size**: the style and size of the arrows at the ends of the arc.
 
 ## How the settings work together
 

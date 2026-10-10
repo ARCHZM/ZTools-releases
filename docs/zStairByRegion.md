@@ -40,9 +40,9 @@ Not for:
   - **Z**: like U but with a different turn, climbing in a zigzag.
   - **C**: several turns, usually for a stair well enclosed by walls on three or more sides.
 - **Type**: how the stair is built.
-  - **Plank**: separate horizontal treads and vertical risers, for timber or steel stair looks. DIMENSIONS then also shows **Tread T**, **Riser T** and **Nosing**.
-  - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab T**, and with **Egress** on also **Tilt**.
-  - **Ramp**: no steps, just one continuous ramp, for accessible ramps and service access. DIMENSIONS then shows **Ramp T**, and **Stringer is forced off** even if you had turned it on. Switching back to Plank or Monolithic turns Stringer on again.
+  - **Plank**: separate horizontal treads and vertical risers, for timber or steel stair looks. DIMENSIONS then also shows TREAD **Thickness**, RISER **Thickness** and **Nosing**.
+  - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**, and with **Egress** on also **Tilt**.
+  - **Ramp**: no steps, just one continuous ramp, for accessible ramps and service access. DIMENSIONS then shows **Ramp Thickness**, and **Stringer is forced off** even if you had turned it on. Switching back to Plank or Monolithic turns Stringer on again.
 - **Mirror Stair Flight** (formerly Mirror): flips the whole stair left to right about the perpendicular bisector of the start edge (this changes the turn direction of L, U and Z). Use it to change the hand of the stair.
 - **Add Entry Landing** (formerly Egress, available only for multi-storey stairs): builds the stair by the rules for an enclosed exit stair (IBC). The stair hugs the walls, a full-width landing is made at the entrance, and the landings at turns are larger. **It can be turned on only when Story = Multiple.** In Single mode the switch is disabled and forced off.
 - **Trim Underground Geo** (formerly Trim Ground): cuts away the part of the stringers or slab below the stair's own ground level, so the underside sits on the ground.
@@ -54,23 +54,23 @@ Not for:
 
 ## DIMENSIONS > RISER
 
-- **Riser** (target riser height): the step height you want. The tool divides the total height by this value and rounds to get the number of steps, then divides the total height by that number to get the real riser height. So **the final height of each step is not exactly the number you typed**, it is adjusted by rounding, usually only a little. A sensible range for houses is about 6.5 in to 7.5 in. Too high gives steep steps, too low gives more steps and a longer stair.
-- **Riser T**: the thickness of the riser board, 0.1 in to 4 in. Shown only for Plank.
+- RISER **Height** (target riser height): the step height you want. The tool divides the total height by this value and rounds to get the number of steps, then divides the total height by that number to get the real riser height. So **the final height of each step is not exactly the number you typed**, it is adjusted by rounding, usually only a little. A sensible range for houses is about 6.5 in to 7.5 in. Too high gives steep steps, too low gives more steps and a longer stair.
+- RISER **Thickness**: the thickness of the riser board, 0.1 in to 4 in. Shown only for Plank.
 
 ## DIMENSIONS > TREAD
 
 - **Going** (formerly Tread D): the horizontal depth of each step. A sensible range is about 10 in to 12 in (default 11 in). Too small feels cramped and may trigger a code warning. Too large uses more floor space.
 - **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Shown only for Plank.
-- **Tread T**: the tread thickness, 0.5 in to 2 in, default 1 in. Shown only for Plank.
+- TREAD **Thickness**: the tread thickness, 0.5 in to 2 in, default 1 in. Shown only for Plank.
 
 ## DIMENSIONS > MONOLITHIC
 
-- **Slab T**: the thickness of the monolithic slab, measured down from the nosing line.
+- **Slab Thickness**: the thickness of the monolithic slab, measured down from the nosing line.
 - **Tilt**: shown only when Type = Monolithic and Egress is on. The backward lean of each riser from vertical (0 to 45 degrees), for the common cast-in-place detail of a slightly slanted riser with a level tread.
 
 ## DIMENSIONS > RAMP
 
-- **Ramp T**: the thickness of the ramp slab. It is separate from Slab T.
+- **Ramp Thickness**: the thickness of the ramp slab. It is separate from Slab Thickness.
 
 ## DIMENSIONS > LANDING (collapsible)
 
@@ -85,22 +85,22 @@ The heading is a switch.
 
 The heading is a switch for solid sloping stringers (the structural beams under the steps) on both sides. With Type = Ramp it is forced off and cannot be turned on. It can be turned on again after switching to Plank or Monolithic. When open:
 
-- **Stringer T**: the stringer thickness, 0.1 in to 4 in.
-- **Stringer D**: how deep the stringer reaches below the nosing line, 9 in to 24 in, default 12 in. In Monolithic mode it is capped automatically (never more than one riser plus Slab T), so the stringer does not poke through the underside of the slab.
+- STRINGER **Thickness**: the stringer thickness, 0.1 in to 4 in.
+- STRINGER **Depth**: how deep the stringer reaches below the nosing line, 9 in to 24 in, default 12 in. In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
 
 ## DIMENSIONS > RAILING PROFILE (collapsible)
 
-The heading is a switch that additionally outputs a pair of guide curves (inner and outer) following the stair, so you can place rails by hand or use `zRailing` to build real railings along them. These are **curves**, not solid rails. **With Stringer on, this switch can still be turned on**, and only Rail Inset below is grayed out, so you can turn it on now and it takes effect when you turn Stringer off later. When open:
+The heading is a switch that additionally outputs a pair of guide curves (inner and outer) following the stair, so you can place rails by hand or use `zRailing` to build real railings along them. These are **curves**, not solid rails. **With Stringer on, this switch can still be turned on**, and only RAILING PROFILE Inset below is grayed out, so you can turn it on now and it takes effect when you turn Stringer off later. When open:
 
-- **Rail Inset**: how far the rail guide is pulled in from the step edge. It can be adjusted only while Stringer is off. If Stringer is on, it is disabled because the rail guide then follows the center of the stringer.
+- RAILING PROFILE **Inset**: how far the rail guide is pulled in from the step edge. It can be adjusted only while Stringer is off. If Stringer is on, it is disabled because the rail guide then follows the center of the stringer.
 
 ## How the settings work together
 
 - **Height, Riser and the final number of steps work as one system.** Riser is only a wish. The number of steps is the total height divided by it and rounded, and the real riser is the total height divided by that number. In multi-storey mode each storey can have a different height, so the real riser can differ slightly between storeys. This is normal.
 - **Story = Multiple changes the available styles and the layout.** Style narrows to U and C (L, Straight and Z cannot be stacked), and if you had chosen another style it changes to U. The Height row becomes the Typical / Ground / Basement table.
-- **Type shows or hides a whole set of rows.** Plank shows Tread T, Riser T and Nosing. Monolithic shows Slab T (and Tilt if Egress is on). Ramp shows Ramp T and forces Stringer off, and switching back turns it on again.
+- **Type shows or hides a whole set of rows.** Plank shows TREAD Thickness, RISER Thickness and Nosing. Monolithic shows Slab Thickness (and Tilt if Egress is on). Ramp shows Ramp Thickness and forces Stringer off, and switching back turns it on again.
 - **With Landing off, Even and At Height are disabled (grayed).** They only describe how landings are inserted.
-- **Stringer and Railing Profile:** the RAILING PROFILE switch itself is never forced off by Stringer. When Stringer is on, only Rail Inset is grayed out, because the rail guide follows the center of the stringer.
+- **Stringer and Railing Profile:** the RAILING PROFILE switch itself is never forced off by Stringer. When Stringer is on, only RAILING PROFILE Inset is grayed out, because the rail guide follows the center of the stringer.
 - **Code checks only warn, they never stop you.** If Riser or Going is outside the built-in building code range (IBC 2018), a yellow note appears in the viewport HUD, but you can still bake. Whether to follow the code is your decision.
 
 ## Good to know

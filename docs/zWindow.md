@@ -53,11 +53,11 @@ The heading is a switch that adds a horizontal bar with a fixed transom window a
 
 ## DIMENSIONS
 
-- **Frame Width**: how far the outer frame is offset inward in the plane of the wall.
-- **Frame Depth**: how far the frame is extruded along the wall normal.
+- FRAME **Width**: how far the outer frame is offset inward in the plane of the wall.
+- FRAME **Depth**: how far the frame is extruded along the wall normal.
 - **Sash Width / Bead Width**: the sash width for non-Fixed types. For Fixed it becomes the bead width (the same field with a different label).
-- **Sash Depth / Bead Depth**: the depth along the wall normal. Always at most half of the Frame Depth.
-- **Glass Thick**: the thickness of the glass.
+- **Sash Depth / Bead Depth**: the depth along the wall normal. Always at most half of the FRAME Depth.
+- GLASS **Thickness**: the thickness of the glass.
 - **Rows**: the number of horizontal cells the glass is divided into. 1 means no division, 2 means one horizontal bar splits the glass in two, and so on. The default is 2. (Since 2026-09-06 this is a cell count. Before that it counted the bars.)
 - **Cols**: the number of vertical cells, with the same meaning as Rows. The default is 2.
 

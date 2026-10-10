@@ -11,12 +11,12 @@
 
 ## Presets
 
-A separate row at the top has three presets, **Tiny**, **Small** and **Large Object** (not part of a group box). Switching the preset resets the default values and the slider ranges of several size fields below, but does not change their hard input limits. The parameters are in three group boxes: **TEXT** (Unit Format, Text Size, Decimal Places), **DIMENSION** (Label Offset, Extension Line, Arc Offset) and **ARROW** (Arrow Style, Arrow Size).
+A separate row at the top has three presets, **Tiny**, **Small** and **Large Object** (not part of a group box). Switching the preset resets the default values and the slider ranges of several size fields below, but does not change their hard input limits. The parameters are in three group boxes: **TEXT** (TEXT Unit, TEXT Size, Decimal Places), **DIMENSION** (Label Offset, Extension Line, Arc Offset) and **ARROW** (ARROW Style, ARROW Size).
 
 ## TEXT
 
-- **Unit Format**: the length unit format of the dimension text (for example feet and inches, or decimal inches).
-- **Text Size**: the height of the dimension text.
+- TEXT **Unit**: the length unit format of the dimension text (for example feet and inches, or decimal inches).
+- TEXT **Size**: the height of the dimension text.
 - **Decimal Places**: the number of decimals in the length. All three presets share the same range, which does not change with the preset.
 
 ## DIMENSION
@@ -27,12 +27,12 @@ A separate row at the top has three presets, **Tiny**, **Small** and **Large Obj
 
 ## ARROW
 
-- **Arrow Style**: **None**, **Arrow**, **Tick** or **Dot**. The default is **Tick**.
-- **Arrow Size**: the size of the arrow or tick.
+- ARROW **Style**: **None**, **Arrow**, **Tick** or **Dot**. The default is **Tick**.
+- ARROW **Size**: the size of the arrow or tick.
 
 ## How the settings work together
 
-- **Switching the Tiny, Small or Large preset resets the defaults and slider ranges** of Text Size, Label Offset, Extension Line, Arc Offset and Arrow Size. You can still type a value outside the visible slider range.
+- **Switching the Tiny, Small or Large preset resets the defaults and slider ranges** of TEXT Size, Label Offset, Extension Line, Arc Offset and ARROW Size. You can still type a value outside the visible slider range.
 - **When Arc Offset is not ticked, it uses Label Offset.** Tick it to set it on its own.
 
 ## Good to know

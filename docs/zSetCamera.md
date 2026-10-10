@@ -19,17 +19,17 @@
 
 ## CAMERA CONTROL > LENS
 
-- **Lens Length** (mm): starts at the 35 mm equivalent focal length of the source viewport camera.
+- LENS **Length** (mm): starts at the 35 mm equivalent focal length of the source viewport camera.
 
 ## CAMERA CONTROL > POSITION
 
 - **Eye Height**: a preset of **Custom**, **Seated** (3.75 ft), **Standing** (5.25 ft, the default), **Tall** (6.5 ft), **Balcony** (12 ft) or **Bird's-eye** (50 ft).
 - **Camera Height**: the camera height, kept in sync both ways with the Eye Height preset.
-- **Camera Dolly / Camera Strafe**: move the camera forward and back, or left and right, along its viewing direction.
+- **Camera Dolly / Strafe**: move the camera forward and back, or left and right, along its viewing direction.
 
 ## CAMERA CONTROL > FRUSTUM SHIFT
 
-- **Vertical Shift / Horizontal Shift**: shifts the view frustum up or down and left or right, without re-aiming the camera.
+- **Vertical Shift / FRUSTUM SHIFT Horizontal**: shifts the view frustum up or down and left or right, without re-aiming the camera.
 
 ## NAMED VIEW
 

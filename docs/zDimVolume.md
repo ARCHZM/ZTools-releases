@@ -11,15 +11,15 @@
 
 ## TEXT
 
-A row at the top has three presets, **Tiny**, **Small** and **Large Object**. The preset affects only Text Size. This tool has no arrows, so the only group box is **TEXT**.
+A row at the top has three presets, **Tiny**, **Small** and **Large Object**. The preset affects only TEXT Size. This tool has no arrows, so the only group box is **TEXT**.
 
-- **Unit Format**: the volume unit format.
-- **Text Size**: the height of the dimension text.
+- TEXT **Unit**: the volume unit format.
+- TEXT **Size**: the height of the dimension text.
 - **Decimal Places**: the number of decimals in the volume value.
 
 ## How the settings work together
 
-- **A change to any of the three fields recalculates everything.** A preset switch affects only Text Size.
+- **A change to any of the three fields recalculates everything.** A preset switch affects only TEXT Size.
 - **The text direction no longer follows the world XY axes.** The tool works out the smallest-area bounding box of each object (the same rotating-calipers method as `zDimArea` and `zTextureMappingByObjects`) and aligns the text to the long side of the shape itself.
 - **The label sits at the center of the top face**, not at the centroid. The text always floats above the top of the solid, so it is never buried inside where you cannot see it.
 

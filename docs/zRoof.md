@@ -47,7 +47,7 @@ Not for:
 
 ### Gambrel: SLOPE BREAK
 
-- **Break Frac**: where along the half span the slope changes.
+- **Break Fraction**: where along the half span the slope changes.
 - **Lower Pitch**: the steep lower slope.
 - **Upper Pitch**: the shallow upper slope. It is grayed out and ignored when Height Mode is Fixed, because the height is then set directly.
 

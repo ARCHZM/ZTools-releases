@@ -34,8 +34,8 @@ Scores are compared only among the things you score, so they do not need to be p
 **Step 4: set the standing height and the view range.** In **SETUP** on the left:
 
 - **Elevation**: the standing height, that is how high the eyes are above the slab. Default 5. Use the eye height at a desk or standing.
-- **# of Rays**: how many lines of sight in a full circle. Default 144. More is finer and slower.
-- **V Range** and **V Samples**: how wide to look up and down. Default 60 degrees in total, with 3 angles. Raise them for a finer look, or set V Samples to 1 to look only at the horizontal circle.
+- **Rays**: how many lines of sight in a full circle. Default 144. More is finer and slower.
+- **Vertical Range** and **Vertical Samples**: how wide to look up and down. Default 60 degrees in total, with 3 angles. Raise them for a finer look, or set Vertical Samples to 1 to look only at the horizontal circle.
 - **View Range**: how far the eye can see. A line of sight that travels this far without touching anything counts as "sky".
 
 **Step 5: choose what blocks the view.** **Occluders** in SETUP has two choices, All and Pick. **All** (the default) lets everything visible in the scene block the view, which is closest to reality. **Pick** lets only the things you pick block the view.
@@ -64,9 +64,9 @@ This is exactly the same as in `zAnalyzeView`: one row per sample face. Click a 
 - **Metric**: what the heat map, HUD, histogram and point values show. **Quality Score** is the normalized score from 0 to 100. **Sky View Factor** is the share of the view that is sky. **Scored View Factor** is the share of the view occupied by scored things. The shares are weighted by solid angle and count all lines of sight (including those blocked by unscored things and those pointing down at the ground), so sky, scored, skipped and ground add up to 100%. The Verdict Gauge and Threshold work only for Quality Score, and Threshold is grayed out for the other metrics.
 - **Range**: how values map to colors. **Auto**: the colors stretch from the lowest to the highest value over all sample faces, to compare rooms. **Fixed**: a fixed 0 to 100%.
 - **Elevation**: the height of the eyes above the slab, 0 to 10, default 5.
-- **# of Rays**: the number of lines of sight in a horizontal circle, default 144.
-- **V Range**: the total opening angle up and down, in degrees, centered on the horizontal. Default 60, which is 30 degrees up and down. 0 means horizontal only.
-- **V Samples**: how many angles are taken within the up and down range. Default 3. The total number of rays is # of Rays times V Samples. 1 means the horizontal circle only.
+- **Rays**: the number of lines of sight in a horizontal circle, default 144.
+- **Vertical Range**: the total opening angle up and down, in degrees, centered on the horizontal. Default 60, which is 30 degrees up and down. 0 means horizontal only.
+- **Vertical Samples**: how many angles are taken within the up and down range. Default 3. The total number of rays is Rays times Vertical Samples. 1 means the horizontal circle only.
 - **View Range**: how far a line of sight can go. A line that travels farther without touching anything counts as sky. While you drag this number, a circle is shown briefly in the viewport so you can see how large the range is.
 - **Threshold**: the pass line, 0 to 100, default 50. It is used by the Verdict Gauge in the HUD: a face passes when its average score is not below it.
 - **Occluders**: **All**: everything visible in the scene blocks the view, including unscored buildings. **Pick**: only the things you pick block the view. Scored things always take part, whichever mode you choose.

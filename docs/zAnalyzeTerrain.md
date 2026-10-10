@@ -96,10 +96,10 @@ Colors each face by the direction it slopes down towards: north blue, east green
 
 ## LABELS
 
-- **Label size**: the text size of the labels, in the viewport and in baked text.
+- LABELS **Size**: the text size of the labels, in the viewport and in baked text.
 - **Decimals**: the number of decimal places in values.
 - **Arrow size**: the length of the downslope arrow at each point, in screen pixels. The default is 38.
-- **Label height**: how far a point's label is raised above the point. The default is 100. It applies in the viewport and when baking.
+- LABELS **Height**: how far a point's label is raised above the point. The default is 100. It applies in the viewport and when baking.
 
 ## DISPLAY
 

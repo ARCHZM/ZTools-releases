@@ -14,8 +14,8 @@ A row at the top has three presets, **Tiny**, **Small** and **Large Object**. Th
 
 ## TEXT
 
-- **Unit Format**: the length unit format of the radius text, from the same list of units as `zDimLength`.
-- **Text Size**: the height of the dimension text.
+- TEXT **Unit**: the length unit format of the radius text, from the same list of units as `zDimLength`.
+- TEXT **Size**: the height of the dimension text.
 - **Decimal Places**: the number of decimals in the value. All three presets share the same range.
 
 ## DIMENSION
@@ -25,11 +25,11 @@ A row at the top has three presets, **Tiny**, **Small** and **Large Object**. Th
 
 ## ARROW
 
-- **Arrow Style / Arrow Size**: the style and size of the leader arrow.
+- **Arrow Style / ARROW Size**: the style and size of the leader arrow.
 
 ## How the settings work together
 
-- **Changing Unit Format regenerates every label text.**
+- **Changing TEXT Unit regenerates every label text.**
 
 ## Input requirements
 

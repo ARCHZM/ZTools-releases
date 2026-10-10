@@ -66,19 +66,19 @@ Not for:
   - **Spacing**: the number of cables is worked out from the largest clear gap you set.
   - **Count**: you set a fixed number of cables.
 - **Gap or Count**: shows the one that matches Mode: the largest clear gap between cables, or the total number of cables.
-- **Top mgn / Bot mgn**: how far the cable zone is pulled in from the top and the bottom.
+- **Top mgn / Bottom Margin**: how far the cable zone is pulled in from the top and the bottom.
 
 **System = Glass**
 
-- **Thick**: the glass panel thickness.
+- **Thickness**: the glass panel thickness.
 - **Gap**: the clearance between the glass edge and the post face.
-- **Clear** (clearance above the floor): can be adjusted only for framed glass (posts on) with Bottom Rail off. It sets how high the bottom edge of the glass is above the floor. For frameless glass (posts off), Bottom Rail is forced off, and Clear is forced to zero and locked.
+- **Clearance** (clearance above the floor): can be adjusted only for framed glass (posts on) with Bottom Rail off. It sets how high the bottom edge of the glass is above the floor. For frameless glass (posts off), Bottom Rail is forced off, and Clear is forced to zero and locked.
 
 **System = Metal**
 
 - **Gap / Clear**: the same meaning as for Glass: the edge gap and the clearance above the floor (again adjustable only when framed and Bottom Rail is off).
-- **Inset T/B**: how far the metal panel is pulled in from the top and the bottom (applied to both).
-- **Inset L/R**: how far the metal panel is pulled in from the left and the right.
+- **Inset Top/Bottom**: how far the metal panel is pulled in from the top and the bottom (applied to both).
+- **Inset Left/Right**: how far the metal panel is pulled in from the left and the right.
 
 ## GUARDRAIL
 
@@ -86,9 +86,9 @@ Not for:
 
 - **Type**: segmented or two-tier.
   - **Segmented**: the guardrail is made of separate units.
-  - **Two-Tier**: the guardrail has an upper and a lower rail, and **Lower Ht** (lower rail height) appears.
+  - **Two-Tier**: the guardrail has an upper and a lower rail, and **Lower Height** (lower rail height) appears.
 - **Distribution / Spacing**: the same meaning as in DIVISION > POST: how the guardrail units or posts are distributed along the path, and their spacing.
-- **Lower Ht**: shown only for Two-Tier. The height of the lower rail.
+- **Lower Height**: shown only for Two-Tier. The height of the lower rail.
 - **Mode** (Segmented only): like Mode for cables: work out from a spacing, or set a fixed count. Gap or Count is shown to match.
 - **Pipe Dia**: the diameter of the pipe parts of the guardrail.
 - **Base Plate**: whether a base plate is made under the guardrail posts or units.
@@ -115,7 +115,7 @@ Available only when Top Rail is on. The heading is a switch for the intermediate
 The heading is a switch for the bottom rail. With System = Baluster it is forced on and cannot be turned off. In frameless glass or metal wall mode it is forced off and cannot be turned on. When open:
 
 - **Section**: the bottom rail cross-section.
-- **Clear** (clearance above the floor): the height of the underside of the bottom rail above the floor.
+- **Clearance** (clearance above the floor): the height of the underside of the bottom rail above the floor.
 
 ### HANDRAIL
 
@@ -129,8 +129,8 @@ The heading is a switch for a separate accessible handrail (different from the t
 **ADA EXTENSION**: the heading is a switch for whether the handrail ends extend into the horizontal sections that accessibility rules ask for. This heading cannot be collapsed. With the switch off the values below are grayed out but stay visible. They are:
 
 - **Return**: how the end of the extension finishes: down, to the wall, or a loop back.
-- **Ext**: the length of the extension at each end.
-- **Corner R**: the corner radius at the bend of the extension.
+- ADA EXTENSION **Length**: the length of the extension at each end.
+- **Corner Radius**: the corner radius at the bend of the extension.
 
 ## How the settings work together
 

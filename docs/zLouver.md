@@ -29,13 +29,13 @@ Not for:
 
 - **Spacing**: the center-to-center spacing of the blades, top to bottom.
 - **Angle**: the tilt of the blades from horizontal, from -89 to 89 degrees. A larger angle makes the blades closer to vertical. Near 0 they are almost horizontal.
-- **Thick**: the thickness of each blade.
-- **Depth** (read-only, no checkbox): always equal to the frame depth divided by the absolute cosine of the angle (`Frame Depth / |cos(Angle)|`), so the blades exactly fit the frame depth. It cannot be typed.
+- **Thickness**: the thickness of each blade.
+- **Depth** (read-only, no checkbox): always equal to the frame depth divided by the absolute cosine of the angle (`FRAME Depth / |cos(Angle)|`), so the blades exactly fit the frame depth. It cannot be typed.
 - **Extension**: extra length added to the blades beyond the automatic Depth. Always editable. To make the blades longer, change Extension.
 
 ## How the settings work together
 
-- **Depth always follows Frame Depth and Angle** and cannot be typed. Extension is added on top of this automatic value, and the two together are the real blade length.
+- **Depth always follows FRAME Depth and Angle** and cannot be typed. Extension is added on top of this automatic value, and the two together are the real blade length.
 - **Angle affects both the tilt and the automatic Depth.** Changing it changes both, but Extension stays as it is.
 
 ## Good to know

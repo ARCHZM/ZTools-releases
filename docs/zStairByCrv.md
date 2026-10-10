@@ -33,9 +33,9 @@ Not for:
   - **Single**: one flight climbing to the Height you set.
   - **Multiple**: stairs for several storeys in a row. The Height row is replaced by a table of **Typical / Ground / Basement** rows, each with a floor-to-floor height and a count.
 - **Type**: how the stair is built.
-  - **Plank**: separate horizontal treads and vertical risers. DIMENSIONS then also shows **Tread T**, **Riser T** and **Nosing**.
-  - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab T**.
-  - **Ramp**: no steps, just one continuous sloping ramp. DIMENSIONS then shows **Ramp T**, and the **Riser** and **Riser T** rows are hidden because a ramp has no discrete steps.
+  - **Plank**: separate horizontal treads and vertical risers. DIMENSIONS then also shows TREAD **Thickness**, RISER **Thickness** and **Nosing**.
+  - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**.
+  - **Ramp**: no steps, just one continuous sloping ramp. DIMENSIONS then shows **Ramp Thickness**, and the RISER **Height** and RISER **Thickness** rows are hidden because a ramp has no discrete steps.
 - **Reverse Path Direction** (formerly Flip): puts the stair on the other side of the path curve, so you do not have to pick again.
 - **Retain Path Curvature** (formerly True Arc): when the path has arc segments, whether the tread, riser and landing edges are built from true arcs.
   - On: the edges at a bend are smooth true arcs.
@@ -52,22 +52,22 @@ Not for:
 
 ## DIMENSIONS > RISER
 
-- **Riser** (target riser height): the step height you want. The tool uses it to work out how many steps are needed. It is a target, not an exact final value. The real height of each step is adjusted slightly by rounding, usually by a small amount. A sensible range for houses is about 6.5 in to 7.5 in. The row is hidden for Ramp.
-- **Riser T**: the thickness of the riser board. Shown only for Plank.
+- RISER **Height** (target riser height): the step height you want. The tool uses it to work out how many steps are needed. It is a target, not an exact final value. The real height of each step is adjusted slightly by rounding, usually by a small amount. A sensible range for houses is about 6.5 in to 7.5 in. The row is hidden for Ramp.
+- RISER **Thickness**: the thickness of the riser board. Shown only for Plank.
 
 ## DIMENSIONS > TREAD
 
 - **Going** (formerly Tread D): the horizontal depth of each step, measured along the path. It depends on Rise Mode. In Fixed Going it is the value you type and it applies as is. In Fit Curve it is grayed out and shows the derived value. A sensible range is about 10 in to 12 in (default 11 in).
 - **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Shown only for Plank.
-- **Tread T**: the tread thickness, from 0.5 in to 2 in, default 1 in. Shown only for Plank.
+- TREAD **Thickness**: the tread thickness, from 0.5 in to 2 in, default 1 in. Shown only for Plank.
 
 ## DIMENSIONS > MONOLITHIC
 
-- **Slab T**: the thickness of the monolithic slab, measured down from the nosing line. It is also the thickness of landings.
+- **Slab Thickness**: the thickness of the monolithic slab, measured down from the nosing line. It is also the thickness of landings.
 
 ## DIMENSIONS > RAMP
 
-- **Ramp T**: the thickness of the ramp slab. It is separate from Slab T.
+- **Ramp Thickness**: the thickness of the ramp slab. It is separate from Slab Thickness.
 
 ## DIMENSIONS > LANDING (collapsible)
 
@@ -81,23 +81,23 @@ The heading is a switch that controls whether landings are made at corners or wh
 
 The heading is a switch for solid sloping stringers on both sides of the stair. With Type = Ramp this switch is forced off and cannot be turned on. When open:
 
-- **Stringer T**: the stringer thickness, 0.1 in to 4 in.
-- **Stringer D**: how deep the stringer reaches below the nosing line, 9 in to 24 in, default 12 in. In Monolithic mode it is capped automatically (never more than one riser plus Slab T), so the stringer does not poke through the underside of the slab.
+- STRINGER **Thickness**: the stringer thickness, 0.1 in to 4 in.
+- STRINGER **Depth**: how deep the stringer reaches below the nosing line, 9 in to 24 in, default 12 in. In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
 
 ## DIMENSIONS > RAILING PROFILE (collapsible)
 
 The heading is a switch that additionally outputs a pair of guide curves following the stair. When open:
 
-- **Rail Inset**: how far the rail guide is pulled in from the step edge. It can be adjusted only while Stringer is off. If Stringer is on, it is disabled.
+- RAILING PROFILE **Inset**: how far the rail guide is pulled in from the step edge. It can be adjusted only while Stringer is off. If Stringer is on, it is disabled.
 
 ## How the settings work together
 
 - **Rise Mode decides who follows whom.** In Fixed Going, Going is your fixed value and the path is only a direction (a long path is cut short, a short path is extended). In Fit Curve, Going is a read-only derived value and the path length is followed exactly. In both modes Riser is only a target, and the number of steps always comes from Height and Riser.
 - **In Fit Curve, if the derived Going falls below the code minimum, the tool refuses to build.** The preview goes empty, the HUD shows a red error, and closing the dialog bakes nothing. Lengthen the path, reduce the number of steps, or switch to Fixed Going.
 - **Story = Multiple replaces the Height row** with the Typical / Ground / Basement table.
-- **Type shows or hides a whole set of rows.** Plank shows Tread T, Riser T and Nosing. Monolithic shows only Slab T. Ramp shows only Ramp T, hides Riser and Riser T, and forces Stringer off. Switching back turns Stringer on again.
+- **Type shows or hides a whole set of rows.** Plank shows TREAD Thickness, RISER Thickness and Nosing. Monolithic shows only Slab Thickness. Ramp shows only Ramp Thickness, hides Riser and RISER Thickness, and forces Stringer off. Switching back turns Stringer on again.
 - **With Landing off, Pick / Unpick, Even and At Height are all disabled (grayed).** They only describe how landings are inserted.
-- **Stringer and Railing Profile:** when Stringer is on, Rail Inset is disabled, because the rail guide then follows the center of the stringer. Rail Inset can be set only when Stringer is off.
+- **Stringer and Railing Profile:** when Stringer is on, RAILING PROFILE Inset is disabled, because the rail guide then follows the center of the stringer. RAILING PROFILE Inset can be set only when Stringer is off.
 - **Code checks only warn, they never stop you.** If Riser or Going is outside the built-in building code range, a yellow note appears in the viewport HUD, but you can still bake.
 
 ## Good to know

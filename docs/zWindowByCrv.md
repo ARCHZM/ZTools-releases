@@ -34,9 +34,9 @@ All lengths are entered in the **Unit** chosen at the top (mm or inch). Switchin
 
 The three headings can be clicked to collapse or expand. This only changes what you see, not the values.
 
-- **Frame**: Frame Width (default 2.5 in) and Frame Depth (along the wall normal, default 4 in).
-- **Sash**: Sash Width and Sash Depth (both 1 in by default). Here the sash is the glass bead around each pane, since a fixed window has no real sash. Sash Depth can be at most half of Frame Depth, and larger values are cut back.
-- **Glass**: Glass Thick (default 0.5 in).
+- **Frame**: FRAME Width (default 2.5 in) and FRAME Depth (along the wall normal, default 4 in).
+- **Sash**: SASH Width and SASH Depth (both 1 in by default). Here the sash is the glass bead around each pane, since a fixed window has no real sash. SASH Depth can be at most half of FRAME Depth, and larger values are cut back.
+- **Glass**: GLASS Thickness (default 0.5 in).
 
 ## How corners are handled
 
@@ -48,7 +48,7 @@ The three headings can be clicked to collapse or expand. This only changes what 
 ## How the settings work together
 
 - With Glass Split off, Column Width and Row Height are grayed out and keep their values.
-- The position of the glass at a corner changes with Window Offset, Frame Depth and the sash values. This is normal: when the whole window moves into the wall, the corner joint moves with it.
+- The position of the glass at a corner changes with Window Offset, FRAME Depth and the sash values. This is normal: when the whole window moves into the wall, the corner joint moves with it.
 
 ## Good to know
 

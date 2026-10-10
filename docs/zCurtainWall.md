@@ -16,8 +16,8 @@ Not for:
 
 1. Run `zCurtainWall` and pick one or more path curves (see Good to know).
 2. The dialog opens with a live preview. The left column has **LAYOUT** and **DIVISION**. The right column has **DIMENSIONS**, which contains PANEL, MULLION and TRANSOM sections.
-3. In **LAYOUT**, choose **Story**: Single (type a Height) or Multiple (use the Ground / Typical floor table and a Slab Thk).
-4. In **DIVISION**, set **H Division** (Even or Fixed) and **H Spacing** for the mullion spacing. In the TRANSOM section, add custom transom rows if you want them.
+3. In **LAYOUT**, choose **Story**: Single (type a Height) or Multiple (use the Ground / Typical floor table and a Slab Thickness).
+4. In **DIVISION**, set MULLION **Division** (Even or Fixed) and MULLION **Spacing** for the mullion spacing. In the TRANSOM section, add custom transom rows if you want them.
 5. In **DIMENSIONS**, set the glass thickness (PANEL) and the width and depth of the mullions and transoms, with their Silicone and Cap switches.
 6. If the path curves you picked still exist in the document, you can drag their control points in the viewport and the preview follows.
 7. **Bake** creates the real geometry (including a hidden anchor curve of the path, so that `zCurtainWallEdit` can detect if you moved the wall). **Cancel** discards the preview.
@@ -28,8 +28,8 @@ Not for:
 - **Format**: the display unit for lengths (mm or inch). Values are converted to model units on bake.
 - **Story** (Single / Multiple): how many storeys the wall covers.
   - **Single**: a **Height** field gives the total wall height.
-  - **Multiple**: shows a Typical row and a Ground row (each with **FFH**, the floor-to-floor height, and **Count**, the number of repeats) plus a **Slab Thk** field. Ground is the lowest storey (Count is normally 1, and Z = 0 starts at its floor). Typical is the standard storey stacked above Ground. The total height is the sum of all storeys, so you no longer type a Height. A Typical Count of 0 is allowed and means only the Ground storey.
-- **Slab Thk** (Multiple only, default 24 in / 609.6 mm): when above 0, every storey boundary (including the one just below the top edge) gets an extra forced transom at Slab Thk below the boundary transom, representing the underside of the floor slab. The glass between the two transoms is classed as **spandrel** glass, on its own layer and color. Normal vision glass is not affected. Set it to 0 to skip spandrel glass completely.
+  - **Multiple**: shows a Typical row and a Ground row (each with **FFH**, the floor-to-floor height, and **Count**, the number of repeats) plus a **Slab Thickness** field. Ground is the lowest storey (Count is normally 1, and Z = 0 starts at its floor). Typical is the standard storey stacked above Ground. The total height is the sum of all storeys, so you no longer type a Height. A Typical Count of 0 is allowed and means only the Ground storey.
+- **Slab Thickness** (Multiple only, default 24 in / 609.6 mm): when above 0, every storey boundary (including the one just below the top edge) gets an extra forced transom at Slab Thickness below the boundary transom, representing the underside of the floor slab. The glass between the two transoms is classed as **spandrel** glass, on its own layer and color. Normal vision glass is not affected. Set it to 0 to skip spandrel glass completely.
 - **Flip In/Out**: the path you pick is the centerline of the glass itself. By default the mullions are on the interior side and the caps on the exterior side. Tick this to swap the two sides. It only affects the depth direction, not widths or heights.
 - **Linearize Path**: on by default. At the soft polyline nodes that the tool creates when it breaks up a smooth curve, transoms, caps, silicone joints and glass or spandrel panels are cut as straight rectangles, one per bay. When off, these parts follow the real bend at every internal node with zero-width miters, so the transoms and glass hug the curve continuously. Mullions, mullion caps and mullion silicone always stay straight rectangles, whatever this setting is.
 
@@ -39,10 +39,10 @@ Two collapsible headings, **MULLION** and **TRANSOM**. They collapse only and ha
 
 ### MULLION
 
-- **H Division** (Even / Fixed): how the width of each bay is decided.
+- MULLION **Division** (Even / Fixed): how the width of each bay is decided.
   - **Even**: fits a whole number of bays and shares the remainder equally among them.
-  - **Fixed**: every bay is exactly H Spacing, and the last bay may be shorter.
-- **H Spacing**: the target mullion spacing. In Even mode, an `-> actual: X` hint under it shows the real spacing.
+  - **Fixed**: every bay is exactly MULLION Spacing, and the last bay may be shorter.
+- MULLION **Spacing**: the target mullion spacing. In Even mode, an `-> actual: X` hint under it shows the real spacing.
 
 ### TRANSOM
 
@@ -57,7 +57,7 @@ One group box with three sections in this order: PANEL, MULLION, TRANSOM.
 
 ### PANEL
 
-- **Glass Thk** (default 12 mm / 0.5 in): the thickness of the glass panel, offset inward from the frame surface.
+- PANEL **Thickness** (default 12 mm / 0.5 in): the thickness of the glass panel, offset inward from the frame surface.
 
 ### MULLION (the heading is a switch for the vertical members, on by default)
 
@@ -73,7 +73,7 @@ One group box with three sections in this order: PANEL, MULLION, TRANSOM.
 
 - **Cap depends on its member switch.** MULLION > Cap can be turned on only while MULLION is on, and its Width and Depth rows are shown only then. TRANSOM > Cap likewise depends on TRANSOM. Turning a member switch off disables Cap and hides its rows.
 - **Silicone is independent of the member switch.** Mullion silicone and transom silicone can stay on or off even if the mullion or transom itself is off.
-- **Story drives the Height field and the floor table.** Single shows only Height. Multiple hides Height, derives it from FFH x Count of Ground and Typical, and adds Slab Thk.
+- **Story drives the Height field and the floor table.** Single shows only Height. Multiple hides Height, derives it from FFH x Count of Ground and Typical, and adds Slab Thickness.
 - **Story also changes the form of the transom table.** Single uses one flat table with heights from the bottom of the wall. Multiple uses the Ground / Typical table with heights from the bottom of each storey. The two tables are stored separately, so switching Story does not clear the other one.
 - **Slab Thickness works only in Multiple mode.** In Single mode it is treated as 0 even if it has a value, and no spandrel transom or glass is made.
 - **Storey boundaries and slab rows beat any custom division row** near them.
