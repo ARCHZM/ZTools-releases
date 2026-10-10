@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- `zArrayBetween`: arrays along a polyline of any number of picked points. Copies are distributed on each segment on its own and turn to follow the segment direction. The whole array is one group. The Y side is picked with a click, then Enter starts the start point. **Trim Segment Ends** (formerly Fit EndPt) shortens every segment. The Repick Cplane button and the Follow Path check box were removed.
+- Stair tools (`zStairByRegion`, `zStairByCrv`, `zSpiralStair`): repeated flights of Plank stairs are baked as Rhino blocks, so a tall stair with identical storeys makes a much smaller file. Editing a baked stair works as before.
+- `zStairByCrv`: fixed the stringers missing on upper storeys after Bake in Multiple mode, a gap before corner landings in Fit Curve mode, and an error in Ramp with Multiple storeys.
+- Stairs: Bake with stringers is several times faster, and dragging a value shows the preview while you drag. `zStairByRegion` previews tall stacks faster.
+
 ## 0.1.1-beta3 (pre-release)
 
 Reworked `zAnalyzeTerrain`:

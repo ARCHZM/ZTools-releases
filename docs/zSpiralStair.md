@@ -100,3 +100,4 @@ The heading is a switch that additionally outputs an inner and outer guide curve
 - **A manual deformation of a single part is thrown away when you run Edit.** Edit deletes and rebuilds the whole stair, it does not patch parts.
 - **Copying and pasting a baked stair is safe.** The tool recognizes a copy as independent.
 - **If a stored setting is deleted or changed, Edit silently replaces it with the default.** The missing setting is rebuilt with its default, with no message telling you which one changed.
+- **Repeated climbing segments are baked as Rhino blocks.** In Plank construction, the treads, risers and nosings of identical climbing segments (typically every storey) share one block definition, which keeps the file small. Platforms, stringers and railing are ordinary objects. Monolithic and Ramp are not instanced. Use Edit as usual to change the stair. Do not use Block Edit on these blocks.
