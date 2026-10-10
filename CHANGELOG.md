@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.1.2
+## 0.1.3
+
+Same tools as 0.1.2. The license text (EULA) no longer calls ZTools a pre-release.
+
+## 0.1.2 (replaced by 0.1.3)
 
 Same tools as 0.1.1-beta4, plus a fix: hovering a check box that has a drawing no longer shows a second plain tip, and the explanation now appears under the drawing.
 
