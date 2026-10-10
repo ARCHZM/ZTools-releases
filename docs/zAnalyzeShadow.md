@@ -13,8 +13,8 @@ Good for:
 2. In **SETUP**, set the study range, the date or hours, and the latitude and longitude.
 3. In **SHADOW**, adjust the shadow quality and the pass threshold, with a live preview.
 4. In **DISPLAY**, adjust how the heat map is shown.
-5. To export, set **EXPORT** (image size and so on) and press **Export PNG** (this also makes a GIF) or **Export CSV**.
-6. **Cancel** closes the tool. There is nothing to save, because the tool has no persistent session.
+5. To export, set **EXPORT** (image size and so on) and press **Export PNG** (this also makes a GIF) or **Export CSV**, both inside the EXPORT card.
+6. **Close** closes the tool. There is nothing to save, because the tool has no persistent session.
 
 The dialog has two columns: **SETUP** on the left, **SHADOW**, **DISPLAY** and **EXPORT** on the right. The **ANALYSIS OBJECTS** table of boundaries runs across the top.
 

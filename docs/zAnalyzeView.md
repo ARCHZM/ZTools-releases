@@ -12,7 +12,7 @@ One analysis can include several sample faces. Each face is calculated on its ow
 4. Back in **ANALYSIS OBJECTS**, set **Density** and **Plane** for each row (or use the global row at the top), then press **Compute** on the row (or the global Compute). The calculation runs in the background, a ring shows progress, and you can **Stop** at any time.
 5. When the calculation finishes, use the gradient bar in **DISPLAY** to set the colors. **Grid Divisions**, **Blur Gradient**, **Point Values** and **Color Occluders** control the details. The VIEWPORT sub-group switches Basic HUD, Gradient, Verdict Gauge, Histogram and North Arrow.
 6. In **ISOVIST**, press **Pick** and click any sample point in the viewport to show that point's own isovist outline. The value of that point is shown at the top left of the dialog. Pick again for another point, or **Unpick** to clear.
-7. **Export Isovist** at the bottom turns the isovist of the point you picked into real curves (the boundary polygon plus every ray), on a separate Isovist sublayer. It does not enter picking mode again.
+7. **Export Isovist** in the EXPORT card turns the isovist of the point you picked into real curves (the boundary polygon plus every ray), on a separate Isovist sublayer. It does not enter picking mode again.
 8. **Bake** keeps the analysis result as real geometry. To only preview, press **Close** (closing the dialog leaves no geometry behind, and the preview meshes are removed).
 9. To export an image, choose the **Image Size** in **EXPORT** (or Custom Size), optionally turn on **Floating Viewport** to compose the view, and press **Export PNG**.
 

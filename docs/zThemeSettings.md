@@ -13,7 +13,7 @@ Good for:
 2. **Mode** at the top (Auto, Light or Dark) decides which set of colors is actually applied right now.
 3. In the **EDITING** group, choose whether to edit the Light set or the Dark set (independent of Mode).
 4. In the **COLORS** group, click any swatch to open the system color picker. A color takes effect and is saved as soon as you choose it.
-5. **OK** keeps the changes and closes. **Cancel** undoes everything you changed since you opened the dialog (back to the state when it opened).
+5. **Save** keeps the changes and closes. **Cancel** undoes everything you changed since you opened the dialog (back to the state when it opened).
 
 ## Top (no group)
 
@@ -48,8 +48,8 @@ Good for:
 ## How the settings work together
 
 - **Changing Ink also changes 4 derived colors and 2 preview colors** (Hover Fill, Hover Border, Text Selection, Row Selection Bg, Hover Bg and Active Bg). None of them can be set on its own.
-- **A color is applied and saved as soon as you choose it**, with no need to press OK. Any ZTools dialog that is already open uses the new colors the next time it opens.
-- **Cancel undoes every change made since the dialog opened** and goes back to the colors from before you opened it (Mode included). OK just closes the dialog and keeps everything that has been applied.
+- **A color is applied and saved as soon as you choose it**, with no need to press Save. Any ZTools dialog that is already open uses the new colors the next time it opens.
+- **Cancel undoes every change made since the dialog opened** and goes back to the colors from before you opened it (Mode included). Save just closes the dialog and keeps everything that has been applied.
 
 ## Good to know
 

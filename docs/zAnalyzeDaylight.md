@@ -14,8 +14,8 @@ Good for:
 3. In **METRICS**, choose sDA, ASE or UDI and adjust its thresholds.
 4. In the **ANALYSIS OBJECTS** table, press **Compute** for each target, or for all targets at once.
 5. In **DISPLAY**, adjust the heat map and the on-screen panels.
-6. To produce images or data, set **EXPORT** and press **Bake**, **Export PNG** or **Export CSV**.
-7. **Cancel** closes the tool. There is no persistent session, so every opening starts fresh, but the analysis settings and history stored on each target object are kept.
+6. To produce images or data, set **EXPORT** and press **Export PNG** or **Export CSV** inside it, or press **Bake** at the bottom.
+7. **Close** closes the tool. There is no persistent session, so every opening starts fresh, but the analysis settings and history stored on each target object are kept.
 
 The dialog has two columns. The left column has **SETUP** (with Weather, Occluders and Reflectance sub-groups) and **METRICS**. The right column has **DISPLAY** (with a Viewport sub-group) and **EXPORT**. The **ANALYSIS OBJECTS** table runs across the top.
 
@@ -82,7 +82,7 @@ Four reflectance values (0 to 1, in steps of 0.05), applied automatically by the
 
 - **Image Size**: Medium (1600 x 1200), Large (2048 x 1536) or Custom (a W/H row appears, 1920 x 1080 by default).
 - **Floating Viewport** (off by default): opens a separate floating viewport for composing the image.
-- Buttons: **Bake** (bakes the heat map mesh), **Export PNG**, **Export CSV** (the file is actually an .xlsx spreadsheet), **Reset** and **Cancel**. There is no OK button, and Cancel is the only way to close.
+- Buttons: **Bake** (bakes the heat map mesh), **Reset**, **Bake** and **Close** at the bottom, and **Export PNG** and **Export CSV** (the file is actually an .xlsx spreadsheet) inside the EXPORT card. There is no OK or Cancel button, and Close is the only way to close.
 
 ## ANALYSIS OBJECTS
 

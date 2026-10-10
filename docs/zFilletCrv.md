@@ -17,7 +17,7 @@ Not for:
 2. Pick one or more curves. Only curves with **at least two straight segments** can be picked. A pure arc or a single straight segment cannot (see Good to know).
 3. The dialog opens, and the live preview shows the fillet at every corner.
 4. Adjust **Mode**, **Radius / Distance** and **Keep Arcs**.
-5. **Bake** creates the geometry. **Cancel** discards it and the original curves are untouched.
+5. **Apply** creates the geometry. **Cancel** discards it and the original curves are untouched.
 
 ## Parameters
 

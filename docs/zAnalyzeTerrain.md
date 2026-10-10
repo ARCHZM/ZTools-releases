@@ -16,7 +16,7 @@ Use it to check height differences on a site, find slopes that are too steep, se
 
 ## The window
 
-From top to bottom: **ANALYZE POINTS** across the full width, then **SETUP** and **LABELS** on the left and **DISPLAY**, **MESH** and **EXPORT** on the right, and the buttons **Reset**, **Export PNG**, **Bake** and **Close** at the bottom. The width is fixed. You can make the window taller, and only the points table grows.
+From top to bottom: **ANALYZE POINTS** across the full width, then **SETUP** and **LABELS** on the left and **DISPLAY**, **MESH** and **EXPORT** on the right, and the buttons **Reset**, **Bake** and **Close** at the bottom. **Export PNG** is inside the EXPORT card. The width is fixed. You can make the window taller, and only the points table grows.
 
 ## ANALYZE POINTS
 
@@ -111,7 +111,7 @@ Colors each face by the direction it slopes down towards: north blue, east green
 
 ## EXPORT
 
-**Image Size** sets the size of the exported PNG: Viewport x2, Medium (1600 px) or Large (2048 px). The height follows the shape of the active viewport. **Export PNG** is at the bottom of the window. The image includes the legend, the statistics and the north arrow.
+**Image Size** sets the size of the exported PNG: Viewport x2, Medium (1600 px) or Large (2048 px). The height follows the shape of the active viewport. **Export PNG** is inside the EXPORT card. The image includes the legend, the statistics and the north arrow.
 
 ## What Bake creates
 

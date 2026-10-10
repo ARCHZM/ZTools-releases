@@ -7,7 +7,7 @@
 1. Run `zScale`. The dialog is titled **Batch Scale**.
 2. Select one or more objects.
 3. Adjust **SETTING** and **FACTOR**.
-4. **Bake** applies the scaling. **Cancel** discards it.
+4. **Apply** applies the scaling. **Cancel** discards it.
 
 ## SETTING
 

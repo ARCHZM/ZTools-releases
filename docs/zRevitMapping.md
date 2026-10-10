@@ -8,7 +8,7 @@ The configuration is global and works across projects (it is not stored per .3dm
 
 1. Run `zRevitMapping` to open the settings window.
 2. Each bakeable command has one row: the command name (read only), a **Category** dropdown, a **Family** text box, a **Type** text box and that row's own **Reset** button.
-3. Every field is saved the moment you change it (a Category is saved when you choose it, and Family and Type when the text box loses focus). There is no pending state that waits for OK. OK and Cancel both just close the window.
+3. Every field is saved the moment you change it (a Category is saved when you choose it, and Family and Type when the text box loses focus). There is no pending state that waits for Save. Save and Cancel both just close the window.
 4. **Reset** restores that row to the factory default of its command (or clears it if the command has no default).
 5. You can also use the **Import...** button at the bottom to import every row at once from an .xlsx or .txt file (see the import format below).
 

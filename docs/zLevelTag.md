@@ -24,7 +24,7 @@
 - **SETUP buttons**: **Set Ground Elevation** (pick a point as the real ground elevation, right-click to reset to world Z = 0), **Generate Levels** (create a stack of levels in one go), and **Clear Level Tags** (a complete reset: deletes every level definition, every object's level tag, the ground elevation and every Excluded mark, with a confirmation. After this, opening `zLevelTag` again runs the full three-step wizard).
 - **Toolbar button**: right-click the zLevelTag icon = Clear Level Tags (the command `zLevelTagClear`, which needs no panel).
 - **Top row**: the **Auto Update** slide switch on the far left (state), and the Absolute display on the far right.
-- **Bottom button row**: **Update Tags** on the left (re-tags every object by the current level ranges), and OK / Cancel on the right. Auto Update is On by default, and its state is remembered between openings. Turning it from Off to On updates once at once. Update Tags can also be pressed while Auto Update is on, to catch an update that was missed.
+- **Bottom button row**: **Update Tags** on the left (re-tags every object by the current level ranges), and **Close** on the right (there is no OK or Cancel, because everything applies at once). Auto Update is On by default, and its state is remembered between openings. Turning it from Off to On updates once at once. Update Tags can also be pressed while Auto Update is on, to catch an update that was missed.
 - **EXPORT BY LEVEL**: **As Group**, **As Block** (note: **this deletes the original objects and replaces them with block instances**) and **As Layer** (moves objects under a `level name::original layer name` layer tree, and the tags stay).
 
 ## Dialogs

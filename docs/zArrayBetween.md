@@ -9,7 +9,7 @@
 3. Define the array plane. With a single point or a single straight line selected, the world XY plane is used automatically. In other cases you click the origin, then the X axis, then the Y side, and press Enter.
 4. Pick the start point, then the end point of the first segment. To make a polyline, keep picking points. Press Enter when you are done. Type `Undo` to remove the last point.
 5. The dialog opens. Adjust **DISTRIBUTION** and **END**.
-6. **OK** creates the array. **Cancel** discards it.
+6. **Apply** creates the array. **Cancel** discards it.
 
 ## DISTRIBUTION
 

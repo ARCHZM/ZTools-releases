@@ -8,7 +8,7 @@
 2. Select the objects to project.
 3. Pick the ground (a Brep, mesh or extrusion). If you pick nothing, the world XY plane at Z = 0 is used.
 4. Adjust **PROJECTION** and **TRANSFORMATION**.
-5. **Bake** applies it. **Cancel** discards it.
+5. **Apply** applies it. **Cancel** discards it.
 
 ## PROJECTION
 
