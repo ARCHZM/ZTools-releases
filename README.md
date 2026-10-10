@@ -2,16 +2,15 @@
 
 A collection of parametric modeling and analysis tools for architects and designers working in Rhino 8 for Windows: stairs, railings, windows and doors, roofs, curtain walls, sections, dimensions, site context, daylight, shadow and view analysis, block and level management, and small utilities.
 
-**Status:** pre-release (`0.1.1-beta3`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
+**Status:** release (`0.1.2`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
 
-> Pre-release means some edges are still rough. Keep a backup of your file before running batch tools, and use Undo if a result is not what you expected.
+> Some edges may still be rough. Keep a backup of your file before running batch tools, and use Undo if a result is not what you expected.
 
 ## Install
 
 1. In Rhino 8, run `_PackageManager`.
-2. Tick **Include pre-releases** at the bottom of the Package Manager window. Pre-release packages are hidden unless it is ticked.
-3. Search for `ztools`, install it, and restart Rhino.
-4. Run `zTools` to show the toolbar, or type any command below.
+2. Search for `ztools`, install it, and restart Rhino.
+3. Run `zTools` to show the toolbar, or type any command below.
 
 Requirements: Rhino 8 for Windows, **version 8.21.25188.17001 (Service Release 21) or newer**. Mac is not supported yet.
 
@@ -79,7 +78,7 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 - **zRevitMapping** - Stores a Revit category and type for each ZTools command and stamps it on what the command bakes, for Rhino.Inside.Revit workflows.
 - **zThemeSettings** - Sets the colors and light or dark mode of all ZTools dialogs.
 
-Longer guides for each tool will be added during the pre-release. Tell me which ones you need first.
+Longer guides for each tool will be added over time. Tell me which ones you need first.
 
 ## Manuals
 
@@ -114,6 +113,8 @@ Terrain: this work is based on API services provided by the OpenTopography Facil
 
 ## Changelog
 
-- **0.1.1-beta3**: reworked `zAnalyzeTerrain` (elevation, slope and aspect modes, contour lines inside elevation, analysis points, aspect arrows, cleaner analysis grid).
+- **0.1.2**: same tools as 0.1.1-beta4; fixes the double tip on check boxes that have a drawing.
+- **0.1.1-beta4**: new look for every tool window, footer buttons the same everywhere, drawings that explain parameters when you hover their names, `zArrayBetween` along any polyline, faster stairs (replaced by 0.1.2).
+- **0.1.1-beta3**: reworked `zAnalyzeTerrain` (elevation, slope and aspect modes, contour lines inside elevation, analysis points, aspect arrows, cleaner analysis grid; replaced by 0.1.1-beta4).
 - **0.1.1-beta2**: same tools as 0.1.1-beta1; the package description is now a short list of the toolbar groups and the package homepage points to this repository (withdrawn, replaced by 0.1.1-beta3).
 - **0.1.1-beta1**: first public pre-release (withdrawn, replaced by 0.1.1-beta2).

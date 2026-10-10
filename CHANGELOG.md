@@ -1,7 +1,12 @@
 # Changelog
 
-## Unreleased
+## 0.1.2
 
+Same tools as 0.1.1-beta4, plus a fix: hovering a check box that has a drawing no longer shows a second plain tip, and the explanation now appears under the drawing.
+
+## 0.1.1-beta4 (pre-release, replaced by 0.1.2)
+
+- Hover a parameter name in a tool window and a small architectural drawing shows what it measures, with the explanation under it. Drawings exist for railings, stairs, doors, windows, window corners, curtain walls, roofs, louvers, cameras, dimension tools, `zScatter`, `zArrayBetween`, `zAnalyzeView`, `zAnalyzeTerrain`, `zAnalyzeDaylight` and `zLevelTag`. Choices (for example Single or Split, Plank or Monolithic) and check boxes get a side by side comparison.
 - New look for every tool window: a warm grey ground with white cards, thin-bordered controls, a status line at the top that shows live results, and list selection that matches the segmented controls. Light and dark themes are both covered.
 - Footer buttons are the same everywhere. Tools that create geometry end with `Reset` on the left and `Bake` and `Cancel` on the right. Tools that change selected objects use `Apply`, settings windows use `Save`, and analysis windows use `Bake` and `Close`. Live tools (`zLevelTag`, `zBlockManager`, `zSectionManager`) have only `Close`. Export buttons in the analysis tools moved into their EXPORT card.
 - Parameter names in the dialogs are spelled out in full and no longer repeat the group title (for example `Width` and `Height` under `MOUNT PLATE`).
@@ -10,7 +15,7 @@
 - `zStairByCrv`: fixed the stringers missing on upper storeys after Bake in Multiple mode, a gap before corner landings in Fit Curve mode, and an error in Ramp with Multiple storeys.
 - Stairs: Bake with stringers is several times faster, and dragging a value shows the preview while you drag. `zStairByRegion` previews tall stacks faster.
 
-## 0.1.1-beta3 (pre-release)
+## 0.1.1-beta3 (pre-release, replaced by 0.1.1-beta4)
 
 Reworked `zAnalyzeTerrain`:
 
