@@ -2,7 +2,7 @@
 
 A collection of parametric modeling and analysis tools for architects and designers working in Rhino 8 for Windows: stairs, railings, windows and doors, roofs, curtain walls, sections, dimensions, site context, daylight, shadow and view analysis, block and level management, and small utilities.
 
-**Status:** release (`0.1.3`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
+**Status:** release (`0.1.4`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
 
 > Some edges may still be rough. Keep a backup of your file before running batch tools, and use Undo if a result is not what you expected.
 
@@ -113,6 +113,7 @@ Terrain: this work is based on API services provided by the OpenTopography Facil
 
 ## Changelog
 
+- **0.1.4**: same tools as 0.1.3; color swatches and selected list rows have a new look.
 - **0.1.3**: same tools as 0.1.2; the license text no longer says pre-release.
 - **0.1.2**: same tools as 0.1.1-beta4; fixes the double tip on check boxes that have a drawing.
 - **0.1.1-beta4**: new look for every tool window, footer buttons the same everywhere, drawings that explain parameters when you hover their names, `zArrayBetween` along any polyline, faster stairs (replaced by 0.1.2).

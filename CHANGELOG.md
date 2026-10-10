@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.1.3
+## 0.1.4
+
+Same tools as 0.1.3, with two look changes: color swatches show a small color chip and the hex value in the same field style as the number fields, and a selected list row gets a thin frame around the whole row.
+
+## 0.1.3 (replaced by 0.1.4)
 
 Same tools as 0.1.2. The license text (EULA) no longer calls ZTools a pre-release.
 
