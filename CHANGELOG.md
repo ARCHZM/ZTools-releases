@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- New look for every tool window: a warm grey ground with white cards, thin-bordered controls, a status line at the top that shows live results, and list selection that matches the segmented controls. Light and dark themes are both covered.
+- Footer buttons are the same everywhere. Tools that create geometry end with `Reset` on the left and `Bake` and `Cancel` on the right. Tools that change selected objects use `Apply`, settings windows use `Save`, and analysis windows use `Bake` and `Close`. Live tools (`zLevelTag`, `zBlockManager`, `zSectionManager`) have only `Close`. Export buttons in the analysis tools moved into their EXPORT card.
+- Parameter names in the dialogs are spelled out in full and no longer repeat the group title (for example `Width` and `Height` under `MOUNT PLATE`).
 - `zArrayBetween`: arrays along a polyline of any number of picked points. Copies are distributed on each segment on its own and turn to follow the segment direction. The whole array is one group. The Y side is picked with a click, then Enter starts the start point. **Trim Segment Ends** (formerly Fit EndPt) shortens every segment. The Repick Cplane button and the Follow Path check box were removed.
 - Stair tools (`zStairByRegion`, `zStairByCrv`, `zSpiralStair`): repeated flights of Plank stairs are baked as Rhino blocks, so a tall stair with identical storeys makes a much smaller file. Editing a baked stair works as before.
 - `zStairByCrv`: fixed the stringers missing on upper storeys after Bake in Multiple mode, a gap before corner landings in Fit Curve mode, and an error in Ramp with Multiple storeys.
