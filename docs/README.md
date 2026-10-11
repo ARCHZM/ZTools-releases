@@ -72,4 +72,3 @@ ZTools needs Rhino 8 for Windows, version 8.21.25188.17001 (Service Release 21) 
 - [zSetCamera](zSetCamera.md): Two-point perspective camera
 - [zLockAspectRatio](zLockAspectRatio.md): Lock and unlock a floating viewport ratio (covers zUnlockAspectRatio)
 - [zFaceCamera](zFaceCamera.md): Turn faces toward the camera
-- [zThemeSettings](zThemeSettings.md): Dialog colors and light or dark mode

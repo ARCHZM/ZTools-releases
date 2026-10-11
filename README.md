@@ -76,7 +76,6 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 - **zSection** / **zSectionManager** - Jogged section lines (a polyline with jogs) with a manager; a section can also be cut into real geometry.
 - **zImportDWG** - Sorts the layers of an imported Revit DWG into a standard layer tree.
 - **zRevitMapping** - Stores a Revit category and type for each ZTools command and stamps it on what the command bakes, for Rhino.Inside.Revit workflows.
-- **zThemeSettings** - Sets the colors and light or dark mode of all ZTools dialogs.
 
 Longer guides for each tool will be added over time. Tell me which ones you need first.
 
