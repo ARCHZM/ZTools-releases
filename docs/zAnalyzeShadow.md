@@ -22,7 +22,7 @@ The dialog has two columns: **SETUP** on the left, **SHADOW**, **DISPLAY** and *
 
 A table of boundaries. You can reorder by dragging, or sort by clicking the Boundary column header. The heat map and the coverage shown follow the currently selected row.
 
-**Delete and rename.** There is no separate delete column. Right-click a boundary name for the Rename / Delete menu (the hover color is red). With a name selected, the Delete key also deletes. Click selects, Shift+click selects a range, Ctrl+click adds or removes one, and deleting several asks for confirmation. Double-clicking a name renames it.
+**Delete and rename.** There is no separate delete column. Right-click a boundary name for the Rename / Delete menu (the hover color is light grey). A selected row is grey across the whole row with a thin dark frame. With a name selected, the Delete key also deletes. Click selects, Shift+click selects a range, Ctrl+click adds or removes one, and deleting several asks for confirmation. Double-clicking a name renames it.
 
 ## SETUP
 

@@ -88,7 +88,7 @@ Four reflectance values (0 to 1, in steps of 0.05), applied automatically by the
 
 Each row is one analysis target. A row has: the name (click to select and show it in the HUD, double-click to rename), a World / Pick grid plane switch (World is the default plane that fits the geometry vertices, and Pick asks you to pick an edge as the grid X direction), **Grid Density** (0 to 1, default 0.5, set per target), a **Compute / Stop** button, a status text, a history button (with a badge showing the number of records) and a drag handle for reordering.
 
-**Delete and rename.** There is no separate delete column. Right-click a target name for the Rename / Delete menu (the hover color is red). With a name selected, the Delete key also deletes. Click selects, Shift+click selects a range, Ctrl+click adds or removes one, and deleting several asks for confirmation. Double-clicking a name renames it.
+**Delete and rename.** There is no separate delete column. Right-click a target name for the Rename / Delete menu (the hover color is light grey). A selected row is grey across the whole row with a thin dark frame. With a name selected, the Delete key also deletes. Click selects, Shift+click selects a range, Ctrl+click adds or removes one, and deleting several asks for confirmation. Double-clicking a name renames it.
 
 Above the table there is a set of global controls: a global World / Pick (applied to all targets at once), clear all history (asks for confirmation), compute all / stop all, a global Grid Density, and the **+ Add Object** entry.
 

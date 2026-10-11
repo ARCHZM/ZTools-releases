@@ -27,7 +27,7 @@ The top row of the dialog shows the value of the currently picked isovist on the
 - **Compute / Stop**: starts or stops the calculation for this row only. A ring shows the live progress.
 - **History**: the most recent calculations of this row (up to 20). Click one to restore it.
 
-**Select, rename and delete.** There is no separate delete column. Click a name to select it and show that object's HUD. Shift+click selects a range and Ctrl+click adds or removes one, and selected names have a light red background. Right-click a name for the Rename / Delete menu (the hover color is red). With a name selected, the Delete key also deletes. Deleting several objects asks for confirmation. When you delete an object from the list, its sample grid and preview mesh are removed from the viewport too.
+**Select, rename and delete.** There is no separate delete column. Click a name to select it and show that object's HUD. Shift+click selects a range and Ctrl+click adds or removes one, and a selected row is grey across the whole row with a thin dark frame. Right-click a name for the Rename / Delete menu (the hover color is light grey). With a name selected, the Delete key also deletes. Deleting several objects asks for confirmation. When you delete an object from the list, its sample grid and preview mesh are removed from the viewport too.
 
 When a column name in the header is cut off by the column width (for example Boundary shown as B...), hover over the header to see the full name. The global controls row at the top has matching icons: a global Density, a global Plane (World or Pick for all objects at once), a global Boundary (picks one curve for all objects and clears each object's own override), clear all history, and a global Compute / Stop.
 
