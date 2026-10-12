@@ -14,7 +14,7 @@ A row at the top has three presets, **Tiny**, **Small** and **Large Object**. Th
 
 ## TEXT
 
-- TEXT **Unit**: the length unit format of the radius text, from the same list of units as `zDimLength`.
+- TEXT **Unit**: how the radius text is written, from the same per-system list as `zDimLength`. Size, Label Offset and LEADER Size are in inches or millimeters.
 - TEXT **Size**: the height of the dimension text.
 - **Decimal Places**: the number of decimals in the value. All three presets share the same range.
 

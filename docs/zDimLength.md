@@ -15,7 +15,7 @@ A separate row at the top has three presets, **Tiny**, **Small** and **Large Obj
 
 ## TEXT
 
-- TEXT **Unit**: the length unit format of the dimension text (for example feet and inches, or decimal inches).
+- TEXT **Unit**: how the dimension text is written. The list shows only the formats of the active system: ft & in, ft (dec), in (dec), in (frac) in Imperial; mm, cm, m in Metric (default ft & in, or mm). Each system remembers its own choice. Size, Label Offset, Extension Line, Arc Offset and ARROW Size are in inches or millimeters; the presets are the same physical sizes in both systems.
 - TEXT **Size**: the height of the dimension text.
 - **Decimal Places**: the number of decimals in the length. All three presets share the same range, which does not change with the preset.
 

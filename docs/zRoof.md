@@ -23,7 +23,7 @@ Not for:
 
 ## LAYOUT
 
-- **Format**: the display unit for every length field. It only changes the display; values are stored in model units.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
 - **Style**: the choices depend on your outline.
   - Rectangle: Gable, Hip, Gambrel (barn roof) and Mansard.
   - L, T and cross-shaped plans: Hip only (shown as L-Shape Hip, T-Shape Hip or Cross-Shape Hip).

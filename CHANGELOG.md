@@ -1,6 +1,18 @@
 # Changelog
 
-## 0.1.4
+## 0.2.0
+One unit switch for the whole tool set.
+
+- New `zUnits` button in the Utility toolbar (and the `zUnits` command): switches every tool between **Imperial** (inches, feet) and **Metric** (millimeters, meters). Imperial is the default.
+- The mm / inch switch is gone from the stair, railing, roof, window, door, curtain wall and louver windows. Each system keeps its own values, nothing is converted when you switch, and open windows follow at once.
+- The Rhino document unit no longer decides what the windows show. You can change the document unit while a window is open without restarting; the preview is rebuilt.
+- The dimension tools (`zDimLength`, `zDimRadius`, `zDimArea`, `zDimVolume`, `zDimAngle`) list only the formats of the active system, and their text size, offset and arrow presets are the same physical sizes in inches or millimeters. This fixes tiny text in millimeter documents.
+- Site and analysis tools use feet or meters: `zAnalyzeView`, `zAnalyzeTerrain`, `zSiteContext`, `zSiteModifier`, `zSetCamera` (eye height presets in meters too) and `zLevelTag` (accepts `3.2m`, `3200mm`, `10ft`, metric level presets).
+- `zFilletCrv`, `zPackObjects`, `zArrayBetween`, `zScatterToCrv` and `zTextureMappingByObjects` show their distances in inches or millimeters.
+- Angle fields show a degree sign.
+- Every hover tip, with or without a drawing, and the floating warning card next to a tool window now share one look: a rounded card with a soft shadow. Text under a drawing is left aligned.
+
+## 0.1.4 (replaced by 0.2.0)
 
 Same tools as 0.1.3, with two look changes: color swatches show a small color chip and the hex value in the same field style as the number fields, and a selected list row gets a thin frame around the whole row.
 

@@ -23,9 +23,9 @@
 
 ## CAMERA CONTROL > POSITION
 
-- **Eye Height**: a preset of **Custom**, **Seated** (3.75 ft), **Standing** (5.25 ft, the default), **Tall** (6.5 ft), **Balcony** (12 ft) or **Bird's-eye** (50 ft).
+- **Eye Height**: a preset of **Custom**, **Seated** (3.75 ft), **Standing** (5.25 ft, the default), **Tall** (6.5 ft), **Balcony** (12 ft) or **Bird's-eye** (50 ft). In Metric the list is Seated 1.15 m, Standing 1.6 m (default), Tall 2 m, Balcony 4 m and Bird's-eye 15 m.
 - **Camera Height**: the camera height, kept in sync both ways with the Eye Height preset.
-- **Camera Dolly / Strafe**: move the camera forward and back, or left and right, along its viewing direction.
+- **Camera Dolly / Strafe**: move the camera forward and back, or left and right, along its viewing direction. Camera Height, Dolly and Strafe are shown in feet (Imperial) or meters (Metric); switching the system keeps the same physical camera.
 
 ## CAMERA CONTROL > FRUSTUM SHIFT
 

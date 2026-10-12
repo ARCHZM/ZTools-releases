@@ -20,7 +20,7 @@ Not for:
 
 ## FRAME
 
-- **Format**: the display unit for every length field.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Angles are in degrees.
 - **Width**: how wide the outer frame is, measured inward in the plane of the face.
 - **Depth**: how far the frame is extruded along the face normal.
 - **Offset**: pulls the outline of the mounting face inward before modeling, so neighboring panels have a gap between them.

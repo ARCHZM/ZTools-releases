@@ -1,12 +1,12 @@
-# zWindowByCrv
+# zWindowCorner
 
-`zWindowByCrv` builds a whole row of windows along a polyline baseline on an existing wall in one go. Each straight segment of the baseline becomes one window, and neighboring segments meet directly at the corners. It is made for corner windows and curved facades (approximated by a polyline), which would be tedious to build one window at a time with `zWindow`. Each window consists of a **Frame**, a **Sash** (glass bead), **Glass** and dividing muntins, and baking also cuts the opening in the wall.
+`zWindowCorner` builds a whole row of windows along a polyline baseline on an existing wall in one go. Each straight segment of the baseline becomes one window, and neighboring segments meet directly at the corners. It is made for corner windows and curved facades (approximated by a polyline), which would be tedious to build one window at a time with `zWindow`. Each window consists of a **Frame**, a **Sash** (glass bead), **Glass** and dividing muntins, and baking also cuts the opening in the wall.
 
-Use `zWindow` instead when you have a single window: it supports casement and sliding types. `zWindowByCrv` only makes fixed windows.
+Use `zWindow` instead when you have a single window: it supports casement and sliding types. `zWindowCorner` only makes fixed windows.
 
 ## Quick start
 
-1. Run `zWindowByCrv`.
+1. Run `zWindowCorner`.
 2. Pick the **wall** (surface, Brep or extrusion).
 3. Pick the **baseline curve**, a polyline where each straight segment is one window. The height of the baseline is the sill height.
 4. The view zooms to the baseline and the dialog opens. The picked wall is hidden while the dialog is open, and the preview shows only the windows.
@@ -15,11 +15,10 @@ Use `zWindow` instead when you have a single window: it supports casement and sl
 
 ## Parameters
 
-All lengths are entered in the **Unit** chosen at the top (mm or inch). Switching the unit converts the values so the model stays the same.
+All lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. Each system keeps its own values.
 
 ### LAYOUT
 
-- **Unit**: mm or inch, for every length field below.
 - **Window Offset** (default 2 in): pushes the whole window (frame, bead, glass and muntins) into the wall along the inward wall normal. 0 means the outer face of the frame is flush with the wall face.
 - **Window Height** (default 48 in): the window height, measured up from the Z of the baseline. The sill and the margins at both ends are fixed at 0, so the glass runs all the way down to the baseline and out to every free end.
 

@@ -2,7 +2,7 @@
 
 Step-by-step guides for each tool. Every guide explains what the tool is for, how to use it, what each setting does and what to watch out for.
 
-Distances in these guides are given in feet and inches unless a metric option is named.
+Distances in these guides are given in feet and inches (Imperial), with the metric value where it differs. The whole tool set follows one switch, [zUnits](zUnits.md).
 
 ZTools needs Rhino 8 for Windows, version 8.21.25188.17001 (Service Release 21) or newer. If `ztools` does not appear in the Package Manager, update Rhino to the latest Service Release first (see the [main page](../README.md)).
 
@@ -18,7 +18,7 @@ ZTools needs Rhino 8 for Windows, version 8.21.25188.17001 (Service Release 21) 
 
 - [zRoof](zRoof.md): Parametric roof with dormers
 - [zWindow](zWindow.md): Parametric window in a wall
-- [zWindowByCrv](zWindowByCrv.md): A row of windows along a polyline
+- [zWindowCorner](zWindowCorner.md): A row of windows along a polyline
 - [zDoor](zDoor.md): Parametric door that cuts its own opening
 - [zCurtainWall](zCurtainWall.md): Curtain wall system along a path
 - [zLouver](zLouver.md): Louver panel on a flat face
@@ -57,6 +57,7 @@ ZTools needs Rhino 8 for Windows, version 8.21.25188.17001 (Service Release 21) 
 - [zStraighten](zStraighten.md): Align the longest edge to the X axis
 - [zPackObjects](zPackObjects.md): Pack footprints in a rectangle
 - [zModelScaler](zModelScaler.md): Print scale and dimension converter
+- [zUnits](zUnits.md): Switch every tool between Imperial and Metric
 
 ## Management
 

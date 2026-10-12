@@ -24,7 +24,7 @@ Not for:
 
 ## LAYOUT
 
-- **Format**: the display unit for every length field. Only the display changes. Values are stored in model units.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
 - **Align**: whether the picked curve is the left edge, the center line or the right edge of the stair.
   - **Left**: the curve is the left edge, and the width grows to the right.
   - **Center**: the curve is the center line, and the width grows equally to both sides.

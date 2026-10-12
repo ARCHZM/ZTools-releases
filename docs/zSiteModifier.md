@@ -23,7 +23,7 @@
 ## SMOOTHING
 
 - **Iteration**: how many times the projected heights are smoothed, from 0 to 100 (default 0). The amount of smoothing at each control point depends on the largest height difference to its four neighbors: larger differences are smoothed more, and flat areas are left alone. More iterations give a stronger effect that gradually levels off.
-- **Show Contour**: a contour preview for reference, not baked. The spacing is fixed at 1 ft in an imperial document and 1 m in a metric one, and cannot be changed. Every fifth contour is drawn thicker and labeled with its elevation.
+- **Show Contour**: a contour preview for reference, not baked. The spacing is fixed at 1 ft in Imperial and 1 m in Metric (the global unit system, whatever the document unit is), and cannot be changed. Every fifth contour is drawn thicker and labeled with its elevation.
 
 ## Status bar
 

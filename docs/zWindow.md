@@ -21,7 +21,7 @@ Not for:
 
 ## LAYOUT
 
-- **Unit**: the display unit for every length field.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window.
 - **Type**: how the window opens.
   - **Fixed**: does not open, and works with any outline. The related fields in DIMENSIONS are labeled **Bead** instead of **Sash**.
   - **Hung**: the lower sash slides up.

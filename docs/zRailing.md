@@ -22,7 +22,7 @@ Not for:
 
 ## GENERAL
 
-- **Format**: the display unit for every length field. Only the display changes.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
 - **System**: the main infill. It also switches the content of DIVISION and GUARDRAIL and decides whether RAIL is shown.
   - **Guardrail**: an independent pipe-guardrail unit system, usually for industrial or equipment use. DIVISION is replaced by GUARDRAIL, and the whole RAIL group is hidden, because a guardrail is a separate system that is not mixed with ordinary rail parts.
   - **Baluster**: traditional vertical balusters. Top Rail and Bottom Rail are forced on and cannot be turned off.

@@ -23,7 +23,7 @@ Not for:
 
 ## LAYOUT
 
-- **Format**: the display unit for every length field. Only the display changes. Values are stored in model units.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
 - **Story** (Single / Multiple): one storey or several continuous storeys.
   - **Single**: one stair climbing to the Height you set.
   - **Multiple**: continuous stairs for several storeys. The Height row becomes a table of **Typical / Ground / Basement** rows (floor-to-floor height and count).

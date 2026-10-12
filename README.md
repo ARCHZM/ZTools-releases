@@ -2,7 +2,7 @@
 
 A collection of parametric modeling and analysis tools for architects and designers working in Rhino 8 for Windows: stairs, railings, windows and doors, roofs, curtain walls, sections, dimensions, site context, daylight, shadow and view analysis, block and level management, and small utilities.
 
-**Status:** release (`0.1.4`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
+**Status:** release (`0.2.0`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
 
 > Some edges may still be rough. Keep a backup of your file before running batch tools, and use Undo if a result is not what you expected.
 
@@ -28,7 +28,7 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 - **zRoof** - Gable, hip, gambrel and mansard roofs from a footprint outline, with dormers.
 - **zLouver** - Louver panels (frame and angled blades) on a flat face.
 - **zWindow** - Fixed, hung, casement and sliding windows inside a closed opening curve on a wall; cuts the opening when you bake.
-- **zWindowByCrv** - A run of windows along a path curve, divided by length.
+- **zWindowCorner** - A run of windows along a path curve, divided by length.
 - **zCurtainWall** - Curtain walls with mullions, transoms, glass, silicone and caps along path curves, single or multi-storey.
 - **zDoor** - Single or double doors with frame, glass, handle styles, optional transom and sidelights; cuts the opening when you bake.
 - **zStairByCrv** - Stairs that follow a path curve, as planks, a monolithic slab or a ramp.
@@ -70,6 +70,7 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 - **zFaceCamera** - Rotates selected faces around Z to face the current view.
 
 ### Utility
+- **zUnits** - One switch for the whole tool set between Imperial (in, ft) and Metric (mm, m).
 - **zInspector** - Live count of geometry types with quick select, isolate, hide, lock and delete; `zInspectorToggle` switches its HUD.
 - **zLevelTag** - Defines building levels by elevation and tags every object with its level; export by group, block or layer.
 - **zBlockManager** - Batch rename, re-layer, color code, rebase, reset scale, purge and merge block definitions.
@@ -112,7 +113,8 @@ Terrain: this work is based on API services provided by the OpenTopography Facil
 
 ## Changelog
 
-- **0.1.4**: same tools as 0.1.3; color swatches and selected list rows have a new look.
+- **0.2.0**: one Imperial / Metric switch for the whole tool set (new `zUnits` button), metric defaults in every tool, and one rounded card look for all hover tips and warnings.
+- **0.1.4** (replaced by 0.2.0): same tools as 0.1.3; color swatches and selected list rows have a new look.
 - **0.1.3**: same tools as 0.1.2; the license text no longer says pre-release.
 - **0.1.2**: same tools as 0.1.1-beta4; fixes the double tip on check boxes that have a drawing.
 - **0.1.1-beta4**: new look for every tool window, footer buttons the same everywhere, drawings that explain parameters when you hover their names, `zArrayBetween` along any polyline, faster stairs (replaced by 0.1.2).

@@ -12,7 +12,7 @@
 
 ## SETTING
 
-- **Gap**: the minimum gap between neighboring objects.
+- **Gap**: the minimum gap between neighboring objects, in inches (default 6 in) or millimeters (default 150 mm).
 - **Algorithm**: **Skyline** or **MaxRects** (default).
   - **Skyline**: keeps a horizontal outline and each time picks the position where the piece fits and the resulting height is lowest.
   - **MaxRects**: keeps the full set of maximal free rectangles and picks the placement that wastes the least area. It usually packs tighter than Skyline.

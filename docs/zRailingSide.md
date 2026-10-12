@@ -21,7 +21,7 @@ Not for:
 
 ## GENERAL
 
-- **Format**: the display unit for every length field. Only the display changes. Values are stored in model units.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
 - **System**: the infill. Baluster, Cable, Glass or Metal. Only Glass and Metal can be switched to frameless (by turning the post switch in DIVISION > POST off).
 - **Height**: the total railing height, measured from the reference curve to the top of the top rail.
 - **Below Slab**: how far the posts or the frameless glass wall reach down below the reference curve to cover the slab edge. It affects only the part below the curve. The top rail height, handrail and everything above the curve stay as they are.

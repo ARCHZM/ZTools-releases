@@ -13,7 +13,7 @@
 
 A row at the top has three presets, **Tiny**, **Small** and **Large Object**. The preset affects only TEXT Size. This tool has no arrows, so the only group box is **TEXT**.
 
-- TEXT **Unit**: the volume unit format.
+- TEXT **Unit**: the volume unit: ft3 or in3 in Imperial (default ft3), m3, cm3 or mm3 in Metric (default m3). The list follows the global unit system and each system remembers its own choice. Size is in inches or millimeters.
 - TEXT **Size**: the height of the dimension text.
 - **Decimal Places**: the number of decimals in the volume value.
 

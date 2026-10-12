@@ -28,7 +28,7 @@ Each layer row has a checkbox (include it in the next Query), an icon and name, 
 
 - **OpenTopography access token**: only needed for Terrain. It is free, and it is saved after you enter it.
 - **Terrain**: from OpenTopography. It automatically falls back through USGS 1 m, 10 m and 30 m, then Copernicus 30 m, SRTM and Copernicus 90 m, and uses the finest data available for your area. You do not choose the resolution. It creates one terrain mesh and, optionally, contour lines.
-- **Contours**: queried together with Terrain, not a separate layer. The spacing is 3 ft by default and can be set from 1 to 10 ft by double-clicking the row name.
+- **Contours**: queried together with Terrain, not a separate layer. The spacing is 3 ft (Imperial) or 1 m (Metric) by default and is set by double-clicking the row name. The site size preview and the Too small warning also use feet or meters.
 - **Buildings**: from Overture Maps. Buildings with a real height are extruded to that height. Buildings without height data are extruded to a 20 ft placeholder. The two kinds are baked to different layers so you can tell real data from assumptions.
 - **Roads**: from Overture Maps (transportation, road types). Roads are extruded into strips whose width depends on the road class (motorway, primary, secondary, minor, footpath and so on) and follow the terrain. Each road also gets a centerline curve that follows the terrain. The strips go in the 3D group and the centerlines in the 2D group of the same class.
 - **Railway**: same data source and method as Roads, on its own layers, with strips in 3D and centerlines in 2D.

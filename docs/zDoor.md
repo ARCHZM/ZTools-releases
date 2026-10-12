@@ -19,7 +19,7 @@ Differences from `zWindow`:
 
 ## LAYOUT
 
-- **Unit**: the display unit for every length (mm or inch). Values are converted to model units on bake.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Values are converted to the document units on bake.
 - **Type**: how the door opens.
   - **Single**: one leaf, hinged on the side given by **Hinge**.
   - **Double**: two equal leaves, each Width / 2, with no center post. Each leaf is hinged on its own outer jamb, so there is no hinge choice.

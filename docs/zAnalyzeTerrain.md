@@ -64,8 +64,8 @@ Choose **Elevation**, **Slope** or **Aspect**. Switching is fast because results
 Colors the surface by height.
 
 - **Zero at**: the height shown as 0. This only changes the numbers, never the colors or lines. **Pick** lets you click a point on the model to set it.
-- **Format**: the length unit used for elevations, contour labels and distances.
-- **Interval**: the height difference between neighboring contour lines. Whole units only.
+- **Format**: how elevations, contour labels and distances are written. The list shows only the formats of the active system: ft & in, ft (dec), in (dec), in (frac) in Imperial; mm, cm, m in Metric. Each system remembers its own choice.
+- **Interval**: the height difference between neighboring contour lines, in whole feet (Imperial) or whole meters (Metric). Zero At and the label Height are also in feet or meters.
 - **Primary Contour**: every Nth contour is a primary contour, drawn thicker and labeled with its elevation. 0 means none.
 - **Contour Lines**: draws contour lines on the surface. On by default. Over the colored surface the lines are dark gray. With **Show Colors** off, the lines take the gradient colors and are shown alone.
 

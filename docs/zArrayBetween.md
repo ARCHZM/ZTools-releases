@@ -18,7 +18,7 @@ The settings apply to every segment of the path on its own. A polyline is treate
 - **Mode**: **Fixed Count** or **Fixed Spacing**.
   - **Fixed Count**: that many copies on every segment.
   - **Fixed Spacing**: the spacing restarts at the start of every segment.
-- **Count / Spacing**: shows the one that matches the Mode.
+- **Count / Spacing**: shows the one that matches the Mode. Spacing is in inches (default 66 in) or millimeters (default 1700 mm).
 - **Even Fit**: when on, in Fixed Spacing mode the count on each segment is rounded to a whole number and the remainder is shared evenly. The actual spacing of every segment is shown next to the check box, for example `actual: 6.66 / 5.40 / 6.10`. When off, the copies are placed at the fixed spacing until the segment is used up.
 
 ## END

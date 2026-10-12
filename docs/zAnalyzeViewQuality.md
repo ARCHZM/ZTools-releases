@@ -74,7 +74,7 @@ This is exactly the same as in `zAnalyzeView`: one row per sample face. Click a 
 ## SCORING
 
 - **Sky Score**: the base score of a line of sight that hits nothing and goes straight out (horizontal or upward). Default 4. It is on the same scale as the object scores: the higher it is, the more an open view wins. If it is as high as the best object, the whole map tends toward 100. Lower it to bring out the differences between objects.
-- **Near Distance / Mid Distance**: the two cut-off points that divide distance into near, mid and far (in model units). Defaults 25 ft and 100 ft.
+- **Near Distance / Mid Distance**: the two cut-off points that divide distance into near, mid and far in feet (Imperial) or meters (Metric). Defaults 25 ft and 100 ft in Imperial, 8 m and 30 m in Metric. Elevation and View Range use the same units (defaults 5 ft and 1000 ft, or 1.5 m and 300 m).
 - **Near Weight / Mid Weight / Far Weight**: a discount factor for each of the three distance bands. Defaults 0.5, 0.8 and 1.0. The closer the thing you see, the bigger the discount (a view right in your face is not a good view), and the farther it is, the closer to the full score. Sky always uses the Far factor.
 
 Example: a tree scored 8 that is seen 60 ft away is in the mid band and scores 8 x 0.8 = 6.4. The same tree 15 ft outside the window scores 8 x 0.5 = 4.

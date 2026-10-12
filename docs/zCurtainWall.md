@@ -25,7 +25,7 @@ Not for:
 
 ## LAYOUT
 
-- **Format**: the display unit for lengths (mm or inch). Values are converted to model units on bake.
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Values are converted to the document units on bake.
 - **Story** (Single / Multiple): how many storeys the wall covers.
   - **Single**: a **Height** field gives the total wall height.
   - **Multiple**: shows a Typical row and a Ground row (each with **FFH**, the floor-to-floor height, and **Count**, the number of repeats) plus a **Slab Thickness** field. Ground is the lowest storey (Count is normally 1, and Z = 0 starts at its floor). Typical is the standard storey stacked above Ground. The total height is the sum of all storeys, so you no longer type a Height. A Typical Count of 0 is allowed and means only the Ground storey.

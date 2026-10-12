@@ -20,7 +20,7 @@
 
 ## DIMENSION CONVERTER
 
-Two fields, left and right, that can be swapped. Each has its own unit (mm, cm, m, in, ft). Type a physical size on one side, or a model size, and the other side is calculated live from the current scale. The button in the middle swaps which side is the physical size.
+Two fields, left and right, that can be swapped. Each has its own unit (mm, cm, m, in, ft), independent of the global system. Only the starting unit of the physical side follows it (inch in Imperial, millimeter in Metric). Type a physical size on one side, or a model size, and the other side is calculated live from the current scale. The button in the middle swaps which side is the physical size.
 
 ## How the settings work together
 
