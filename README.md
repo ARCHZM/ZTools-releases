@@ -28,7 +28,7 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 - **zRoof** - Gable, hip, gambrel and mansard roofs from a footprint outline, with dormers.
 - **zLouver** - Louver panels (frame and angled blades) on a flat face.
 - **zWindow** - Fixed, hung, casement and sliding windows inside a closed opening curve on a wall; cuts the opening when you bake.
-- **zWindowCorner** - A row of windows along a polyline.
+- **zWindowCorner** - Corner windows and curved facades: a row of fixed windows along a polyline on an existing wall.
 - **zCurtainWall** - Curtain walls with mullions, transoms, glass, silicone and caps along path curves, single or multi-storey.
 - **zDoor** - Single or double doors with frame, glass, handle styles, optional transom and sidelights; cuts the opening when you bake.
 - **zStairByCrv** - Stairs that follow a path curve, as planks, a monolithic slab or a ramp.

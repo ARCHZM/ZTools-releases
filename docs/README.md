@@ -18,7 +18,7 @@ ZTools needs Rhino 8 for Windows, version 8.21.25188.17001 (Service Release 21) 
 
 - [zRoof](zRoof.md): Parametric roof with dormers
 - [zWindow](zWindow.md): Parametric window in a wall
-- [zWindowCorner](zWindowCorner.md): A row of windows along a polyline
+- [zWindowCorner](zWindowCorner.md): Corner windows and curved facades: a row of fixed windows along a polyline on an existing wall
 - [zDoor](zDoor.md): Parametric door that cuts its own opening
 - [zCurtainWall](zCurtainWall.md): Curtain wall system along a path
 - [zLouver](zLouver.md): Louver panel on a flat face
