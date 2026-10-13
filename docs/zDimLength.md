@@ -16,13 +16,13 @@ A separate row at the top has three presets, **Tiny**, **Small** and **Large Obj
 ## TEXT
 
 - TEXT **Unit**: how the dimension text is written. The list shows only the formats of the active system: ft & in, ft (dec), in (dec), in (frac) in Imperial; mm, cm, m in Metric (default ft & in, or mm). Each system remembers its own choice. Size, Label Offset, Extension Line, Arc Offset and ARROW Size are in inches or millimeters; the presets are the same physical sizes in both systems.
-- TEXT **Size**: the height of the dimension text.
+- TEXT **Size**: the height of the dimension text. Hover its name to see a drawing.
 - **Decimal Places**: the number of decimals in the length. All three presets share the same range, which does not change with the preset.
 
 ## DIMENSION
 
-- **Label Offset**: how far the text is offset from the dimensioned object.
-- **Extension Line**: how far the extension lines go beyond the dimension line. Unlike the other size fields, its hard upper limit is fixed at 4.00 and is the same for all three presets.
+- **Label Offset**: how far the text is offset from the dimensioned object. Hover its name to see a drawing.
+- **Extension Line**: how far the extension lines go beyond the dimension line. Unlike the other size fields, its hard upper limit is fixed at 4.00 and is the same for all three presets. Hover its name to see a drawing.
 - **Arc Offset** (with a checkbox): tick it to give arcs their own offset, different from straight segments. When it is not ticked, Label Offset is used.
 
 ## ARROW

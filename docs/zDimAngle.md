@@ -15,13 +15,13 @@ A row at the top has three presets, **Tiny**, **Small** and **Large Object**. Th
 ## TEXT
 
 - TEXT **Unit**: **Degrees**, **Radians** or **DMS** (degrees, minutes, seconds).
-- TEXT **Size**: the height of the dimension text.
+- TEXT **Size**: the height of the dimension text. Hover its name to see a drawing.
 - **Decimal Places**: 1 by default. In DMS mode it sets the decimals of the seconds.
 
 ## DIMENSION
 
-- **Label Offset**: also the radius of the dimension arc itself.
-- **Text Offset**: how far the number is pushed outward from the dimension arc, in addition to the arc radius. It is independent of Label Offset: Label Offset sets the distance of the arc from the corner vertex, and Text Offset pushes the number a further distance, so the number does not collide with the arrows.
+- **Label Offset**: also the radius of the dimension arc itself. Hover its name to see a drawing.
+- **Text Offset**: how far the number is pushed outward from the dimension arc, in addition to the arc radius. It is independent of Label Offset: Label Offset sets the distance of the arc from the corner vertex, and Text Offset pushes the number a further distance, so the number does not collide with the arrows. Hover its name to see a drawing.
 
 ## ARROW
 

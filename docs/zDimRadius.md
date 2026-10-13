@@ -14,13 +14,13 @@ A row at the top has three presets, **Tiny**, **Small** and **Large Object**. Th
 
 ## TEXT
 
-- TEXT **Unit**: how the radius text is written, from the same per-system list as `zDimLength`. Size, Label Offset and LEADER Size are in inches or millimeters.
-- TEXT **Size**: the height of the dimension text.
+- TEXT **Unit**: how the radius text is written, from the list of the active system: ft & in, ft (dec), in (dec), in (frac) in Imperial; mm, cm, m in Metric (the same list as `zDimLength`). Size, Label Offset and LEADER Size are in inches or millimeters.
+- TEXT **Size**: the height of the dimension text. Hover its name to see a drawing.
 - **Decimal Places**: the number of decimals in the value. All three presets share the same range.
 
 ## DIMENSION
 
-- **Label Offset**: the distance from the arc to the label, along the radius direction.
+- **Label Offset**: the distance from the arc to the label, along the radius direction. Hover its name to see a drawing.
 - **Show Circle & Center Cross** (on by default): draws a dashed full circle and a center cross for each arc, as a reference.
 
 ## ARROW
