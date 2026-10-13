@@ -2,7 +2,7 @@
 
 A collection of parametric modeling and analysis tools for architects and designers working in Rhino 8 for Windows: stairs, railings, windows and doors, roofs, curtain walls, sections, dimensions, site context, daylight, shadow and view analysis, block and level management, and small utilities.
 
-**Status:** release (`0.2.0`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
+**Status:** release (`0.2.1`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
 
 > Some edges may still be rough. Keep a backup of your file before running batch tools, and use Undo if a result is not what you expected.
 
@@ -14,7 +14,7 @@ A collection of parametric modeling and analysis tools for architects and design
 
 Requirements: Rhino 8 for Windows, **version 8.21.25188.17001 (Service Release 21) or newer**. Mac is not supported yet.
 
-**If you cannot find `ztools` in the Package Manager, the most likely reason is your Rhino version.** The Package Manager only lists packages built for the Rhino version you run, so on an older Rhino 8 the package does not appear at all. Check your version with `_About` (or Help, About Rhino), update Rhino to the latest Service Release (Help, Check for Updates), restart Rhino and search again. Also make sure **Include pre-releases** is ticked.
+**If you cannot find `ztools` in the Package Manager, the most likely reason is your Rhino version.** The Package Manager only lists packages built for the Rhino version you run, so on an older Rhino 8 the package does not appear at all. Check your version with `_About` (or Help, About Rhino), update Rhino to the latest Service Release (Help, Check for Updates), restart Rhino and search again.
 
 ## What is inside
 
@@ -113,7 +113,8 @@ Terrain: this work is based on API services provided by the OpenTopography Facil
 
 ## Changelog
 
-- **0.2.0**: one Imperial / Metric switch for the whole tool set (new `zUnits` button), metric defaults in every tool, and one rounded card look for all hover tips and warnings.
+- **0.2.1**: a fresh install opens all eight toolbars, stacked and sized to fit; hover drawings for 12 more check boxes.
+- **0.2.0** (replaced by 0.2.1): one Imperial / Metric switch for the whole tool set (new `zUnits` button), metric defaults in every tool, and one rounded card look for all hover tips and warnings.
 - **0.1.4** (replaced by 0.2.0): same tools as 0.1.3; color swatches and selected list rows have a new look.
 - **0.1.3**: same tools as 0.1.2; the license text no longer says pre-release.
 - **0.1.2**: same tools as 0.1.1-beta4; fixes the double tip on check boxes that have a drawing.

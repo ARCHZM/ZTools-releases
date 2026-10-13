@@ -31,8 +31,8 @@ Not for:
   - **Metal**: metal panels, again either framed or frameless.
 - **Height**: the total railing height, from the path curve to the top of the top rail. The usual range is 36 in to 42 in (common code heights for houses and public buildings).
 - **Offset**: the horizontal offset of the whole railing from the path curve. Together with Flip it decides which side.
-- **Flip In/Out**: the direction the railing is offset to (used together with Offset).
-- **Linearize Path**: whether the input curve is straightened into line segments between the post positions, instead of following every small bend of the curve.
+- **Flip In/Out**: the direction the railing is offset to (used together with Offset). Hover its name to see a drawing of Off and On.
+- **Linearize Path**: whether the input curve is straightened into line segments between the post positions, instead of following every small bend of the curve. Hover its name to see a drawing of Off and On.
 
 ## DIVISION > POST
 
@@ -47,8 +47,8 @@ Not for:
   - **Even**: posts are spread evenly along the whole path with a spacing no larger than **Spacing**.
   - **Fixed**: posts use the fixed **Spacing** value, and the remainder is collected at the end of the path.
 - **Spacing**: the maximum or fixed post spacing.
-- **Base Plate**: whether a base plate is made under each post.
-- **Fitting** (post-top fitting): available only when the Intermediate Rail is on. Makes a saddle fitting at the post top that connects the intermediate rail to the top rail.
+- **Base Plate**: whether a base plate is made under each post. Hover its name to see a drawing of Off and On.
+- **Fitting** (post-top fitting): available only when the Intermediate Rail is on. Makes a saddle fitting at the post top that connects the intermediate rail to the top rail. Hover its name to see a drawing of Off and On.
 
 ## DIVISION > INFILL
 
@@ -91,7 +91,7 @@ Not for:
 - **Lower Height**: shown only for Two-Tier. The height of the lower rail.
 - **Mode** (Segmented only): like Mode for cables: work out from a spacing, or set a fixed count. Gap or Count is shown to match.
 - **Pipe Dia**: the diameter of the pipe parts of the guardrail.
-- **Base Plate**: whether a base plate is made under the guardrail posts or units.
+- **Base Plate**: whether a base plate is made under the guardrail posts or units. Hover its name to see a drawing of Off and On.
 
 ## RAIL
 

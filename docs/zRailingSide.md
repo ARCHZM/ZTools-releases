@@ -25,7 +25,7 @@ Not for:
 - **System**: the infill. Baluster, Cable, Glass or Metal. Only Glass and Metal can be switched to frameless (by turning the post switch in DIVISION > POST off).
 - **Height**: the total railing height, measured from the reference curve to the top of the top rail.
 - **Below Slab**: how far the posts or the frameless glass wall reach down below the reference curve to cover the slab edge. It affects only the part below the curve. The top rail height, handrail and everything above the curve stay as they are.
-- **Flip In/Out**: which side of the reference curve the railing is built on.
+- **Flip In/Out**: which side of the reference curve the railing is built on. Hover its name to see a drawing of Off and On.
 
 ## DIVISION > POST
 
@@ -34,7 +34,7 @@ Not for:
 - **Corner**: **Single** (one shared post at a corner) or **Split** (no shared post, one post set back about 10 in on each side). With frameless glass (posts off) this is forced to Single and locked, because there are no posts to split.
 - **Distribution**: **Even** (spread evenly with a spacing no larger than Spacing) or **Fixed** (fixed spacing, the remainder collected at the end).
 - **Spacing**: the maximum or fixed post spacing.
-- **Fitting**: available only when the Intermediate Rail is on. It makes a saddle fitting at the post top that connects the intermediate rail to the top rail.
+- **Fitting**: available only when the Intermediate Rail is on. It makes a saddle fitting at the post top that connects the intermediate rail to the top rail. Hover its name to see a drawing of Off and On.
 
 ## DIVISION > INFILL
 

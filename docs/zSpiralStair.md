@@ -31,7 +31,7 @@ Not for:
   - **Plank**: separate horizontal treads and vertical risers. Shows TREAD **Thickness** and **Nosing**.
   - **Monolithic**: one solid stepped block, like a cast-in-place concrete stair. Shows **Slab Thickness**. Nosing is ignored in this mode, with a note.
   - **Ramp**: each flight is one continuous spiral slab with no steps. Shows **Ramp Thickness**, and **Stringer is forced off** even if you had turned it on.
-- **Clockwise**: whether the stair climbs clockwise or counter-clockwise. The geometry is always built counter-clockwise first and then mirrored when this is ticked. It changes no dimensions, it is only a direction choice.
+- **Clockwise**: whether the stair climbs clockwise or counter-clockwise. The geometry is always built counter-clockwise first and then mirrored when this is ticked. It changes no dimensions, it is only a direction choice. Hover its name to see a drawing of Off and On.
 - **Trim Platform**: controls how the opening edge of the landing platform is built, trimming away the part of the platform that goes beyond a sensible radial range, so the edge fits the real usable space.
 
 ## DIMENSIONS > GENERAL
@@ -62,7 +62,7 @@ Not for:
 
 The heading is a switch that controls whether landings are made when the code limit on steps per flight is reached. When open:
 
-- **Even Tread Split** (formerly Even): spreads the steps as evenly as possible between landings. When off, each flight climbs as far as the limit allows before a landing is added.
+- **Even Tread Split** (formerly Even): spreads the steps as evenly as possible between landings. When off, each flight climbs as far as the limit allows before a landing is added. Hover its name to see a drawing of Off and On.
 - **At Height**: the cumulative heights at which landings are forced, separated by commas. Each height must fall strictly inside a single storey, otherwise the whole build is stopped with a warning.
 
 ## DIMENSIONS > STRINGER (collapsible)

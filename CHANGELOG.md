@@ -1,6 +1,13 @@
 # Changelog
 
-## 0.2.0
+## 0.2.1
+Fixes for a fresh install, and more hover drawings.
+
+- A new installation now opens all eight ZTools toolbars (All, Site, Architecture, Geometry, Dimension, Analyze, View, Utility), stacked from top to bottom, each as wide as its own buttons. Before, the Site, Dimension and View toolbars were not opened at all and the others were piled on one spot at a fixed small size, so `ZTools All` was cut off.
+- Hover drawings (Off | On) for 12 check boxes: `Flip In/Out` and `Linearize Path` (railings, curtain wall), `Fitting` and `Base Plate` (railings), `Even Tread Split`, `Trim Underground Geo`, `Reverse Path Direction`, `Retain Path Curvature`, `Mirror Stair Flight` (stairs), `Clockwise` (spiral stair), `Force Pyramid` and `Flip Ridge` (roof).
+- Cleaner drawings: view distance and dimension callouts no longer run along their own lines, the gambrel and pitch roof drawings use the same text size as the rest, and the dormer sections show the eave wall and a window.
+
+## 0.2.0 (replaced by 0.2.1)
 One unit switch for the whole tool set.
 
 - New `zUnits` button in the Utility toolbar (and the `zUnits` command): switches every tool between **Imperial** (inches, feet) and **Metric** (millimeters, meters). Imperial is the default.

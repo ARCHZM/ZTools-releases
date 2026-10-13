@@ -43,9 +43,9 @@ Not for:
   - **Plank**: separate horizontal treads and vertical risers, for timber or steel stair looks. DIMENSIONS then also shows TREAD **Thickness**, RISER **Thickness** and **Nosing**.
   - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**, and with **Egress** on also **Tilt**.
   - **Ramp**: no steps, just one continuous ramp, for accessible ramps and service access. DIMENSIONS then shows **Ramp Thickness**, and **Stringer is forced off** even if you had turned it on. Switching back to Plank or Monolithic turns Stringer on again.
-- **Mirror Stair Flight** (formerly Mirror): flips the whole stair left to right about the perpendicular bisector of the start edge (this changes the turn direction of L, U and Z). Use it to change the hand of the stair.
+- **Mirror Stair Flight** (formerly Mirror): flips the whole stair left to right about the perpendicular bisector of the start edge (this changes the turn direction of L, U and Z). Use it to change the hand of the stair. Hover its name to see a drawing of Off and On.
 - **Add Entry Landing** (formerly Egress, available only for multi-storey stairs): builds the stair by the rules for an enclosed exit stair (IBC). The stair hugs the walls, a full-width landing is made at the entrance, and the landings at turns are larger. **It can be turned on only when Story = Multiple.** In Single mode the switch is disabled and forced off.
-- **Trim Underground Geo** (formerly Trim Ground): cuts away the part of the stringers or slab below the stair's own ground level, so the underside sits on the ground.
+- **Trim Underground Geo** (formerly Trim Ground): cuts away the part of the stringers or slab below the stair's own ground level, so the underside sits on the ground. Hover its name to see a drawing of Off and On.
 
 ## DIMENSIONS > GENERAL
 
@@ -77,7 +77,7 @@ Not for:
 The heading is a switch.
 
 - **On**: follows the code limit on steps in one flight, and inserts a landing when it is exceeded. When open:
-  - **Even Tread Split** (formerly Even): spreads the steps as evenly as possible between landings. When off, each flight climbs as far as the code allows before a landing is added, which can leave very few steps in the last flight and look uneven.
+  - **Even Tread Split** (formerly Even): spreads the steps as evenly as possible between landings. When off, each flight climbs as far as the code allows before a landing is added, which can leave very few steps in the last flight and look uneven. Hover its name to see a drawing of Off and On.
   - **At Height**: the heights at which landings are forced, separated by commas (for example `48, 110`). **It works only when Style is Straight, or L in single-storey mode.** For other styles or multi-storey mode, what you type here is ignored, without any error or message.
 - **Off**: the stair climbs all the way up with no landings and ignores the code limit. Turn it off only if you do not need code compliance.
 

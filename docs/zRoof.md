@@ -30,8 +30,8 @@ Not for:
 - **Height Mode**: decides whether the ridge height comes from the slope or is set directly.
   - **Pitch**: the ridge height follows the Pitch value.
   - **Fixed**: you type the ridge height, and the slope is no longer used. This row is hidden for Mansard, which has no single ridge height (the lower and upper slopes control it).
-- **Flip Ridge**: Gable and Gambrel only. Turns the automatically chosen longest edge to the other direction, which rotates the ridge by 90 degrees.
-- **Force Pyramid**: rectangle outlines with Hip only. When the outline is not square, forces a single pyramid peak instead of a hip roof with a ridge.
+- **Flip Ridge**: Gable and Gambrel only. Turns the automatically chosen longest edge to the other direction, which rotates the ridge by 90 degrees. Hover its name to see a drawing of Off and On.
+- **Force Pyramid**: rectangle outlines with Hip only. When the outline is not square, forces a single pyramid peak instead of a hip roof with a ridge. Hover its name to see a drawing of Off and On.
 - **Match Main**: T and cross-shaped plans with Hip only. Controls whether the ridge of a secondary wing follows the ridge height of the main wing.
   - On: the secondary ridge always equals the main ridge height.
   - Off: the secondary wing uses its own pitch, and the valley at the junction stays parallel to the true hip line.

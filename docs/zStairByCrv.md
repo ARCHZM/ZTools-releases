@@ -36,11 +36,11 @@ Not for:
   - **Plank**: separate horizontal treads and vertical risers. DIMENSIONS then also shows TREAD **Thickness**, RISER **Thickness** and **Nosing**.
   - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**.
   - **Ramp**: no steps, just one continuous sloping ramp. DIMENSIONS then shows **Ramp Thickness**, and the RISER **Height** and RISER **Thickness** rows are hidden because a ramp has no discrete steps.
-- **Reverse Path Direction** (formerly Flip): puts the stair on the other side of the path curve, so you do not have to pick again.
-- **Retain Path Curvature** (formerly True Arc): when the path has arc segments, whether the tread, riser and landing edges are built from true arcs.
+- **Reverse Path Direction** (formerly Flip): swaps which end of the path curve the stair starts from, so you do not have to pick again. Hover its name to see a drawing of Off and On.
+- **Retain Path Curvature** (formerly True Arc): when the path has arc segments, whether the tread, riser and landing edges are built from true arcs. Hover its name to see a drawing of Off and On.
   - On: the edges at a bend are smooth true arcs.
   - Off: arcs are approximated by line segments.
-- **Trim Underground Geo** (formerly Trim Ground): cuts away the part of the stringers or slab that is below the stair's own ground level, so the underside sits on the ground. With it off you may see extra solid hanging under the stair.
+- **Trim Underground Geo** (formerly Trim Ground): cuts away the part of the stringers or slab that is below the stair's own ground level, so the underside sits on the ground. With it off you may see extra solid hanging under the stair. Hover its name to see a drawing of Off and On.
 - **Rise Mode**: decides which one gives way, the path length or the **Going** (tread depth).
   - **Fixed Going** (default): Going is the value you type and is never adjusted. The path is only a direction. The number of steps comes from Height and Riser, and the steps are laid along the path at the fixed Going. If the path is longer than needed, the extra length is simply not used (no error, no message). If the path is too short, the stair continues in a straight line from the end of the last used path segment, along its tangent, until all steps are placed.
   - **Fit Curve**: Going becomes a read-only derived value (usable path length / number of steps), and the real length of the path is followed exactly, with no early stop and no extension. This is the original behavior and is kept as an option.
@@ -75,7 +75,7 @@ The heading is a switch that controls whether landings are made at corners or wh
 
 - **Pick / Unpick**: click a segment of the path in the viewport to force a landing there, or remove a picked point. Available only when the path has more than one segment.
 - **At Height**: the cumulative heights at which landings are forced, separated by commas. Each height must fall strictly inside a single flight, otherwise the tool refuses to build and shows a warning instead of ignoring it silently.
-- **Even Tread Split** (formerly Even): spreads the steps as evenly as possible between landings. When off, each flight climbs as far as the code allows before a landing is added.
+- **Even Tread Split** (formerly Even): spreads the steps as evenly as possible between landings. When off, each flight climbs as far as the code allows before a landing is added. Hover its name to see a drawing of Off and On.
 
 ## DIMENSIONS > STRINGER (collapsible)
 

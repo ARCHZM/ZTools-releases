@@ -2,6 +2,8 @@
 
 Step-by-step guides for each tool. Every guide explains what the tool is for, how to use it, what each setting does and what to watch out for.
 
+In every tool window, hover a setting name (or the text of a check box) to see a small drawing of what it measures or what Off and On change.
+
 Distances in these guides are given in feet and inches (Imperial), with the metric value where it differs. The whole tool set follows one switch, [zUnits](zUnits.md).
 
 ZTools needs Rhino 8 for Windows, version 8.21.25188.17001 (Service Release 21) or newer. If `ztools` does not appear in the Package Manager, update Rhino to the latest Service Release first (see the [main page](../README.md)).
