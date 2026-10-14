@@ -17,20 +17,20 @@ Not for:
 1. Run `zRoof`.
 2. Pick a **closed planar polyline** as the roof outline (see Good to know below).
 3. The longest edge is used as the ridge reference automatically. You do not choose it.
-4. The dialog opens with a live preview in the viewport. Adjust **LAYOUT** and **DIMENSIONS**, and add dormers in **DORMERS** if you need them.
+4. The dialog opens with a live preview in the viewport. Adjust **LAYOUT** and **DIMENSIONS**, and add dormers in **DORMERS** if you need them. The three cards sit in one column.
 5. **Bake** creates the real geometry. **Cancel** discards the preview.
 6. To change a baked roof, select it and run `zRoofEdit`.
 
 ## LAYOUT
 
 - Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
-- **Style**: the choices depend on your outline.
+- **Style**: the choices depend on your outline. Hover its name to see a drawing of each shape.
   - Rectangle: Gable, Hip, Gambrel (barn roof) and Mansard.
   - L, T and cross-shaped plans: Hip only (shown as L-Shape Hip, T-Shape Hip or Cross-Shape Hip).
-- **Height Mode**: decides whether the ridge height comes from the slope or is set directly.
+- **Height Mode**: decides whether the ridge height comes from the slope or is set directly. Hover its name to see a drawing of both.
   - **Pitch**: the ridge height follows the Pitch value.
   - **Fixed**: you type the ridge height, and the slope is no longer used. This row is hidden for Mansard, which has no single ridge height (the lower and upper slopes control it).
-- **Flip Ridge**: Gable and Gambrel only. Turns the automatically chosen longest edge to the other direction, which rotates the ridge by 90 degrees. Hover its name to see a drawing of Off and On.
+- **Flip Ridge**: Gable and Gambrel only. Turns the automatically chosen longest edge to the other direction, which rotates the ridge by 90 degrees.
 - **Force Pyramid**: rectangle outlines with Hip only. When the outline is not square, forces a single pyramid peak instead of a hip roof with a ridge. Hover its name to see a drawing of Off and On.
 - **Match Main**: T and cross-shaped plans with Hip only. Controls whether the ridge of a secondary wing follows the ridge height of the main wing.
   - On: the secondary ridge always equals the main ridge height.

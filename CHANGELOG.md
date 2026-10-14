@@ -1,6 +1,13 @@
 # Changelog
 
-## 0.2.1
+## 0.2.2
+
+- `zRoof` is one column of cards (LAYOUT, DIMENSIONS, DORMERS). Hover **Style** and **Height Mode** to see drawings of the choices.
+- `zWindow`: Horizontal Split and Transom (with Split At) now sit in LAYOUT, Glass Split sits in the GLASS card, and the DIVISION card is gone. Hover **Type** for the four window types, and **Open Amount** for how it works in the current type.
+- The **Linearize Path** drawing in `zCurtainWall` is redrawn so the difference is easy to see, and its check box (and Flip In/Out) now show their explanation under the drawing.
+- New `zUnits` toolbar icon: two opposite arrows over a ruler.
+
+## 0.2.1 (replaced by 0.2.2)
 Fixes for a fresh install, and more hover drawings.
 
 - A new installation now opens all eight ZTools toolbars (All, Site, Architecture, Geometry, Dimension, Analyze, View, Utility), stacked from top to bottom, each as wide as its own buttons. Before, the Site, Dimension and View toolbars were not opened at all and the others were piled on one spot at a fixed small size, so `ZTools All` was cut off.

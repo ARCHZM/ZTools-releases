@@ -15,23 +15,21 @@ Not for:
 
 1. Run `zWindow`.
 2. Pick the wall first (you can pick a single face of a multi-face Brep), then pick a **closed** curve for the opening.
-3. The dialog opens with a live preview. Adjust **LAYOUT**, **DIVISION** and **DIMENSIONS**. The FRAME, SASH and GLASS headings in DIMENSIONS can be clicked to collapse or expand. They have no switch and are only for tidying: their values always apply.
+3. The dialog opens with a live preview. Adjust **LAYOUT** and the **FRAME**, **SASH** (**BEAD** for Fixed) and **GLASS** cards.
 4. **Bake** cuts the opening in the wall (a Boolean difference with the actual shape of your curve) and then creates the window geometry. **Cancel** discards the preview and the wall is not cut.
 5. To change a baked window, select it and run `zWindowEdit`. See Good to know for the limits.
 
 ## LAYOUT
 
 - Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window.
-- **Type**: how the window opens.
+- **Type**: how the window opens. Hover its name to see a drawing of the four types.
   - **Fixed**: does not open, and works with any outline. The related fields in DIMENSIONS are labeled **Bead** instead of **Sash**.
   - **Hung**: the lower sash slides up.
   - **Casement**: swings out on a hinge.
   - **Sliding**: the moving sash slides sideways.
   - Any outline other than a rectangle or a rectangle with one arched top is locked to Fixed and the list is disabled.
 - **Hinge / Slide**: Casement and Sliding only. For Casement it is the side of the hinge. For Sliding it is the direction the moving sash slides. Not used by Hung or Fixed.
-- **Open Amount**: non-Fixed types only. It shows the open state in the preview and in renders. It does **not** change the baked structure.
-
-## DIVISION
+- **Open Amount**: non-Fixed types only. It shows the open state in the preview and in renders. It does **not** change the baked structure. Hover its name to see how it works for the current type: how far the lower sash rises (Hung), the swing angle (Casement, 100 means 90 degrees) or the slide distance (Sliding).
 
 ### Horizontal Split (collapsible)
 
@@ -51,13 +49,15 @@ The heading is a switch that adds a horizontal bar with a fixed transom window a
 - **Ray Count**: shown only for Fan. 1 to 12 bars, spread evenly over the angle of the arc.
 - **Hub Ring** (checkbox, on by default): Fan only. Whether the bars meet at a small ring or directly at the center.
 
-## DIMENSIONS
+## FRAME, SASH and GLASS
 
 - FRAME **Width**: how far the outer frame is offset inward in the plane of the wall.
 - FRAME **Depth**: how far the frame is extruded along the wall normal.
 - **Sash Width / Bead Width**: the sash width for non-Fixed types. For Fixed it becomes the bead width (the same field with a different label).
 - **Sash Depth / Bead Depth**: the depth along the wall normal. Always at most half of the FRAME Depth.
 - GLASS **Thickness**: the thickness of the glass.
+### Glass Split (in the GLASS card)
+
 - **Rows**: the number of horizontal cells the glass is divided into. 1 means no division, 2 means one horizontal bar splits the glass in two, and so on. The default is 2. (Since 2026-09-06 this is a cell count. Before that it counted the bars.)
 - **Cols**: the number of vertical cells, with the same meaning as Rows. The default is 2.
 
