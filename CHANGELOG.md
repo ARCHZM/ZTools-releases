@@ -1,6 +1,16 @@
 # Changelog
 
-## 0.2.2
+## 0.2.3
+
+- Hover drawings: every callout curve now runs from its label straight to the side the arrow arrives from, without loops around the drawing; labels move above, below or beside the dimension when needed. The door leaf **Thickness** drawing shows the leaf swung open so the dimension sits clear of the walls.
+- Drawings of one series share one scale and one text size (curtain wall mullion plans and transom sections, door plans), and the door Transom and Sidelight drawings show the same leaf as the other door drawings.
+- The Package Manager entry is now named **ZTools**.
+- The same thing is called the same name everywhere: the curtain wall glass card is **GLASS** (was PANEL), the window Horizontal Split row is **Count** (was Amount), and every on/off section caption reads **ENABLED** (the door glass said ENABLE).
+- Window layout tidy-up: `zSetCamera` is two columns instead of one very tall one; `zDoor` and `zCurtainWall` balance their two columns; `zScatterToCrv` names the row **Spacing** or **Count** after the Mode; `zWindowCorner` uses **Offset** and **Height** in GENERAL.
+- One card vocabulary for the architecture tools: **LAYOUT** (choices), **GENERAL** (overall sizes), **DIVISION** (where it is cut into cells) and one card per member type. `zWindow` has a DIVISION card (Horizontal Split, Transom, Glass Split); `zDoor` moves Transom and Sidelight into LAYOUT; `zWindowCorner` and `zRoof` call their size card GENERAL; `zCurtainWall` gets a GENERAL card (floor heights, slab thickness) and DIVISION shows COLUMNS and ROWS; `zRailing` and `zRailingSide` get a LAYOUT card (System, Flip In/Out, Linearize Path) and a separate HANDRAIL card.
+- `zAnalyzeTerrain` is now SETUP / DISPLAY / EXPORT like the other analysis tools (Mesh Detail in SETUP, label settings in DISPLAY). `zArrayBetween` has only the DISTRIBUTION card. `zTextureMappingByObjects` calls its card TRANSFORMATION. `zPackObjects` ends with **Apply**.
+
+## 0.2.2 (replaced by 0.2.3)
 
 - `zRoof` is one column of cards (LAYOUT, DIMENSIONS, DORMERS). Hover **Style** and **Height Mode** to see drawings of the choices.
 - `zWindow`: Horizontal Split and Transom (with Split At) now sit in LAYOUT, Glass Split sits in the GLASS card, and the DIVISION card is gone. Hover **Type** for the four window types, and **Open Amount** for how it works in the current type.

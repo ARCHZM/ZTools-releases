@@ -10,17 +10,17 @@ Use `zWindow` instead when you have a single window: it supports casement and sl
 2. Pick the **wall** (surface, Brep or extrusion).
 3. Pick the **baseline curve**, a polyline where each straight segment is one window. The height of the baseline is the sill height.
 4. The view zooms to the baseline and the dialog opens. The picked wall is hidden while the dialog is open, and the preview shows only the windows.
-5. Adjust **LAYOUT**, **DIVISION** and **DIMENSIONS**. The preview updates live.
+5. Adjust **GENERAL**, **DIVISION** and the **FRAME**, **SASH** and **GLASS** cards. The preview updates live.
 6. **Bake** creates the windows and cuts the opening in the wall. **Cancel** discards everything and the wall is restored.
 
 ## Parameters
 
 All lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. Each system keeps its own values.
 
-### LAYOUT
+### GENERAL
 
-- **Window Offset** (default 2 in): pushes the whole window (frame, bead, glass and muntins) into the wall along the inward wall normal. 0 means the outer face of the frame is flush with the wall face.
-- **Window Height** (default 48 in): the window height, measured up from the Z of the baseline. The sill and the margins at both ends are fixed at 0, so the glass runs all the way down to the baseline and out to every free end.
+- **Offset** (default 2 in): pushes the whole window (frame, bead, glass and muntins) into the wall along the inward wall normal. 0 means the outer face of the frame is flush with the wall face.
+- **Height** (default 48 in): the window height, measured up from the Z of the baseline. The sill and the margins at both ends are fixed at 0, so the glass runs all the way down to the baseline and out to every free end.
 
 ### DIVISION
 
@@ -29,7 +29,7 @@ All lengths follow the global unit system (see [zUnits](zUnits.md)): inches in I
 - **Column Width** (default 24 in): the target width of each glass column. Each segment works out its own number of columns from its visible glass length: columns = round(visible length / Column Width), at least 1, all equal in width within the segment.
 - **Row Height** (default 24 in): the target height of each glass row. Rows = round(window height / Row Height), at least 1, all equal in height.
 
-### DIMENSIONS
+### FRAME, SASH and GLASS
 
 The three headings can be clicked to collapse or expand. This only changes what you see, not the values.
 
@@ -47,7 +47,7 @@ The three headings can be clicked to collapse or expand. This only changes what 
 ## How the settings work together
 
 - With Glass Split off, Column Width and Row Height are grayed out and keep their values.
-- The position of the glass at a corner changes with Window Offset, FRAME Depth and the sash values. This is normal: when the whole window moves into the wall, the corner joint moves with it.
+- The position of the glass at a corner changes with GENERAL Offset, FRAME Depth and the sash values. This is normal: when the whole window moves into the wall, the corner joint moves with it.
 
 ## Good to know
 

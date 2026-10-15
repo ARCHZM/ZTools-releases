@@ -6,7 +6,7 @@
 
 1. Run `zTextureMappingByObjects`.
 2. Select the objects to map (surfaces, Breps or meshes).
-3. The dialog opens with a live preview of the mapping. Adjust **MAPPING** and **RANDOM TRANSFORMATION**.
+3. The dialog opens with a live preview of the mapping. Adjust **MAPPING** and **TRANSFORMATION**.
 4. While the dialog is open, Rhino's own mapping gizmo (the interactive handles) is shown. You can use it to look at the current mapping box.
 5. **Apply** confirms and keeps the mapping. **Cancel** discards it. If the gizmo is still in the viewport afterwards, press **Esc** to cancel it.
 
@@ -22,7 +22,7 @@
 - **Axes**: three separate switch chips X, Y and Z that decide which axes take part in the Size settings. A switched-off axis is locked at 1 and grayed out.
 - **Size X / Size Y / Size Z**: the size of the mapping box, in inches (default 12 in) or millimeters (default 300 mm). You can type a unit, for example `20cm` or `8in`, and it is converted to the shown unit. Always in effect (there is no separate enable switch, except that with Wrap they are grayed out). They override the box size each object would get from its own fit, so objects of different sizes share one texture scale instead of each being stretched. You can type text with a unit suffix (for example `20cm`) and it is converted to the document unit.
 
-## RANDOM TRANSFORMATION
+## TRANSFORMATION
 
 - **Rotation** (a checkbox plus a maximum angle, off by default): when on, each object's mapping box is rotated randomly about the world Z axis through the center of that object's bottom face, up to the angle you set. It has its own seed and re-roll button.
 - **Offset** (a checkbox, off by default): when on, each object's mapping box is moved randomly along X, Y and Z.

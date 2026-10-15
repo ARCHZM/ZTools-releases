@@ -13,7 +13,7 @@ Differences from `zWindow`:
 2. Pick a wall face (a face of a surface, Brep or extrusion; use Ctrl+Shift+click to pick a single face of a multi-face Brep).
 3. Click a base point on the wall face. This is the lowest point of the opening, centered left to right.
 4. The floating dialog opens. The wall is hidden automatically, and a door of the default size (32 in wide by 80 in high) previews at your point.
-5. Adjust **Type** (single or double), **Hinge** (single only), **Swing** (in or out) and **Open Amount** (preview angle). The viewport updates live. In **DIMENSIONS**, the collapsible **GENERAL** section has Width, Height and GENERAL Thickness, **GLASS** is on by default (turn it off and its five fields are grayed out but still visible), and **HANDLE** picks the handle style. In **FRAME**, set FRAME Width and Depth at the top, and the **TRANSOM** and **SIDELIGHT** sections each have a real on/off switch. When a switch is off, its own values (Height, Width) stay visible but grayed out.
+5. Adjust **Type** (single or double), **Hinge** (single only), **Swing** (in or out) and **Open Amount** (preview angle). The viewport updates live. In **GENERAL** you set Width, Height and GENERAL Thickness, **GLASS** is on by default (turn it off and its five fields are grayed out but still visible), and **HANDLE** picks the handle style. The **TRANSOM** and **SIDELIGHT** switches in **LAYOUT** add fixed glass above and beside the door. In **FRAME**, set FRAME Width and Depth at the top, and the **TRANSOM** and **SIDELIGHT** sections each have a real on/off switch. When a switch is off, its own values (Height, Width) stay visible but grayed out.
 6. **Bake** cuts the door opening in the wall (a Boolean difference, with the size of the whole opening including the frame area), creates the Frame and Panel geometry and groups it. **Cancel** restores the wall as it was and leaves no door and no cut.
 7. To change a baked door, run `zDoorEdit` and select any part of it. The same dialog opens with the saved settings, and Bake replaces the old geometry (keeping the same stable ID).
 
@@ -27,22 +27,35 @@ Differences from `zWindow`:
 - **Swing**: which side of the wall the door opens to, In or Out (a button group).
 - **Open Amount**: only for the preview and renders. It sets the angle of the leaf around the hinge (0 = closed, 100 = 90 degrees). It does not change the baked geometry, which is always modeled closed.
 
-## DIMENSIONS
+### TRANSOM (collapsible, with a real switch, off by default)
 
-### GENERAL
+When on, adds a fixed frame and glass strip above the door head, covering the whole opening width (including any sidelight).
+
+- **Height**: the height of the transom panel, measured up from the door head. Always visible, grayed out when the switch is off.
+
+### SIDELIGHT (collapsible, with a real switch, off by default)
+
+When on, adds fixed glass side windows next to the door. With the switch off, there are no sidelights.
+
+- **Side**: Left, Right or Both (default Left). There is no "None", because the switch itself means none.
+- **Width**: the width of the sidelight panel, measured outward from the door's own jamb. Always visible, grayed out when the switch is off.
+
+The transom and sidelight frames share one continuous system of vertical and horizontal frame bars with the door frame itself (using the same FRAME Width and FRAME Depth), instead of each being a separate closed frame. This leaves no extra seam lines where the sidelight and the transom meet.
+
+## GENERAL
 
 - **Width**: the total opening width. For Double, each leaf is Width / 2.
 - **Height**: the opening height, measured up from the base point you clicked.
 - GENERAL **Thickness**: the thickness of the door leaf (a solid slab) along the wall normal.
 
-### GLASS (collapsible, with a real switch, on by default)
+## GLASS (collapsible, with a real switch, on by default)
 
 When on, a rectangular glass window is cut out of each leaf (a Boolean cut from the solid slab, not added on). When off, the five fields stay visible but are grayed out. Collapsing is separate and is controlled only by the small icon next to the heading.
 
 - GLASS **Thickness**: the glass thickness, 0.50 in by default and adjustable from 0.25 in to 1.00 in. It is independent of GENERAL Thickness (the glass is centered in the leaf's thickness band and is not necessarily as thick as the slab).
 - **Inset Left / Right / Top / Bottom**: the margin from the glass edge to the matching edge of the leaf. The four values are independent. For Double, Left and Right of the right leaf are mirrored automatically, so both windows are symmetric about the center joint.
 
-### HANDLE (collapsible, no switch)
+## HANDLE (collapsible, no switch)
 
 Every door always has a handle, front and back of each leaf. There is no "off" option.
 
@@ -59,21 +72,6 @@ Every door always has a handle, front and back of each leaf. There is no "off" o
 
 - FRAME **Width**: the width of the frame jamb, offset inward in the plane of the wall from the edge of the opening.
 - FRAME **Depth**: the depth of the frame, extruded along the wall normal.
-
-### TRANSOM (collapsible, with a real switch, off by default)
-
-When on, adds a fixed frame and glass strip above the door head, covering the whole opening width (including any sidelight).
-
-- **Height**: the height of the transom panel, measured up from the door head. Always visible, grayed out when the switch is off.
-
-### SIDELIGHT (collapsible, with a real switch, off by default)
-
-When on, adds fixed glass side windows next to the door. With the switch off, there are no sidelights.
-
-- **Side**: Left, Right or Both (default Left). There is no "None", because the switch itself means none.
-- **Width**: the width of the sidelight panel, measured outward from the door's own jamb. Always visible, grayed out when the switch is off.
-
-The transom and sidelight frames share one continuous system of vertical and horizontal frame bars with the door frame itself (using the same FRAME Width and FRAME Depth), instead of each being a separate closed frame. This leaves no extra seam lines where the sidelight and the transom meet.
 
 ## How the settings work together
 

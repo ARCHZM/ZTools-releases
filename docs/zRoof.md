@@ -17,7 +17,7 @@ Not for:
 1. Run `zRoof`.
 2. Pick a **closed planar polyline** as the roof outline (see Good to know below).
 3. The longest edge is used as the ridge reference automatically. You do not choose it.
-4. The dialog opens with a live preview in the viewport. Adjust **LAYOUT** and **DIMENSIONS**, and add dormers in **DORMERS** if you need them. The three cards sit in one column.
+4. The dialog opens with a live preview in the viewport. Adjust **LAYOUT** and **GENERAL**, and add dormers in **DORMERS** if you need them. The three cards sit in one column.
 5. **Bake** creates the real geometry. **Cancel** discards the preview.
 6. To change a baked roof, select it and run `zRoofEdit`.
 
@@ -36,7 +36,7 @@ Not for:
   - On: the secondary ridge always equals the main ridge height.
   - Off: the secondary wing uses its own pitch, and the valley at the junction stays parallel to the true hip line.
 
-## DIMENSIONS
+## GENERAL
 
 - **Pitch**: the general slope for Gable and Hip. Mansard and Gambrel do not use it and use Lower Pitch and Upper Pitch instead. Typical house roofs are about 15 to 45 degrees.
 - **Height** (only when Height Mode is Fixed): the ridge height. Not used by Mansard.

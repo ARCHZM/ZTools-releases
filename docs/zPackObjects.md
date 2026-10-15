@@ -8,7 +8,7 @@
 2. Select the objects to pack.
 3. Click two points on the world XY plane to draw a rectangle as the boundary. This step is **required** and cannot be done in the dialog.
 4. The dialog opens. Adjust **SETTING**. You can drag the boundary rectangle live.
-5. **Bake** creates the result. **Cancel** discards it.
+5. **Apply** moves the objects to the packed result. **Cancel** discards it.
 
 ## SETTING
 

@@ -20,19 +20,22 @@ Not for:
 4. **Bake** creates the real geometry. **Cancel** discards the preview.
 5. To change a baked railing, select it and run `zRailingEdit` (see Good to know for the limits).
 
-## GENERAL
+## LAYOUT
 
-- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
 - **System**: the main infill. It also switches the content of DIVISION and GUARDRAIL and decides whether RAIL is shown.
   - **Guardrail**: an independent pipe-guardrail unit system, usually for industrial or equipment use. DIVISION is replaced by GUARDRAIL, and the whole RAIL group is hidden, because a guardrail is a separate system that is not mixed with ordinary rail parts.
   - **Baluster**: traditional vertical balusters. Top Rail and Bottom Rail are forced on and cannot be turned off.
   - **Cable** (labeled Horizontal in the dialog): horizontal cables.
   - **Glass**: glass panels, either framed with posts, or a frameless glass wall with posts off.
   - **Metal**: metal panels, again either framed or frameless.
-- **Height**: the total railing height, from the path curve to the top of the top rail. The usual range is 36 in to 42 in (common code heights for houses and public buildings).
-- **Offset**: the horizontal offset of the whole railing from the path curve. Together with Flip it decides which side.
 - **Flip In/Out**: the direction the railing is offset to (used together with Offset). Hover its name to see a drawing of Off and On.
 - **Linearize Path**: whether the input curve is straightened into line segments between the post positions, instead of following every small bend of the curve. Hover its name to see a drawing of Off and On.
+
+## GENERAL
+
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
+- **Height**: the total railing height, from the path curve to the top of the top rail. The usual range is 36 in to 42 in (common code heights for houses and public buildings).
+- **Offset**: the horizontal offset of the whole railing from the path curve. Together with Flip it decides which side.
 
 ## DIVISION > POST
 
@@ -117,7 +120,7 @@ The heading is a switch for the bottom rail. With System = Baluster it is forced
 - **Section**: the bottom rail cross-section.
 - **Clearance** (clearance above the floor): the height of the underside of the bottom rail above the floor.
 
-### HANDRAIL
+## HANDRAIL
 
 The heading is a switch for a separate accessible handrail (different from the top rail itself). When open:
 

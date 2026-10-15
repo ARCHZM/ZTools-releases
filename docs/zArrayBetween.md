@@ -8,7 +8,7 @@
 2. Select the objects to array.
 3. Define the array plane. With a single point or a single straight line selected, the world XY plane is used automatically. In other cases you click the origin, then the X axis, then the Y side, and press Enter.
 4. Pick the start point, then the end point of the first segment. To make a polyline, keep picking points. Press Enter when you are done. Type `Undo` to remove the last point.
-5. The dialog opens. Adjust **DISTRIBUTION** and **END**.
+5. The dialog opens. Adjust **DISTRIBUTION**.
 6. **Apply** creates the array. **Cancel** discards it.
 
 ## DISTRIBUTION
@@ -20,8 +20,6 @@ The settings apply to every segment of the path on its own. A polyline is treate
   - **Fixed Spacing**: the spacing restarts at the start of every segment.
 - **Count / Spacing**: shows the one that matches the Mode. Spacing is in inches (default 66 in) or millimeters (default 1700 mm).
 - **Even Fit**: when on, in Fixed Spacing mode the count on each segment is rounded to a whole number and the remainder is shared evenly. The actual spacing of every segment is shown next to the check box, for example `actual: 6.66 / 5.40 / 6.10`. When off, the copies are placed at the fixed spacing until the segment is used up.
-
-## END
 
 - **Trim Segment Ends**: pick two points to measure a distance. Every segment of the path is then shortened by that distance at its end, so the last copy of each segment stops short of the corner. Use it when the copies have a width and would overlap at the corners.
 

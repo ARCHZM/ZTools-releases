@@ -2,7 +2,7 @@
 
 A collection of parametric modeling and analysis tools for architects and designers working in Rhino 8 for Windows: stairs, railings, windows and doors, roofs, curtain walls, sections, dimensions, site context, daylight, shadow and view analysis, block and level management, and small utilities.
 
-**Status:** release (`0.2.2`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
+**Status:** release (`0.2.3`). Free to use, including for commercial projects, under the [EULA](EULA.txt). Report problems in [Issues](../../issues) or through the contact form at https://www.ze-meng.com/.
 
 > Some edges may still be rough. Keep a backup of your file before running batch tools, and use Undo if a result is not what you expected.
 
@@ -113,7 +113,8 @@ Terrain: this work is based on API services provided by the OpenTopography Facil
 
 ## Changelog
 
-- **0.2.2**: `zRoof` in one column, `zWindow` layout regrouped (Horizontal Split, Transom and Split At in LAYOUT, Glass Split in GLASS), new drawings for roof Height Mode and Style and for window Type and Open Amount, clearer Linearize Path drawing, new `zUnits` icon.
+- **0.2.3**: card layout and naming cleanup across the tool windows, cleaner hover drawings (callout curves arrive from the label side, one scale per drawing series), Package Manager name ZTools.
+- **0.2.2** (replaced by 0.2.3): `zRoof` in one column, `zWindow` layout regrouped (Horizontal Split, Transom and Split At in LAYOUT, Glass Split in GLASS), new drawings for roof Height Mode and Style and for window Type and Open Amount, clearer Linearize Path drawing, new `zUnits` icon.
 - **0.2.1** (replaced by 0.2.2): a fresh install opens all eight toolbars, stacked and sized to fit; hover drawings for 12 more check boxes.
 - **0.2.0** (replaced by 0.2.1): one Imperial / Metric switch for the whole tool set (new `zUnits` button), metric defaults in every tool, and one rounded card look for all hover tips and warnings.
 - **0.1.4** (replaced by 0.2.0): same tools as 0.1.3; color swatches and selected list rows have a new look.

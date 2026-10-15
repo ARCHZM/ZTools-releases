@@ -13,8 +13,8 @@
 ## DISTRIBUTION
 
 - **Alignment**: **Normal** (follows the curve normal) or **World Z** (always stays upright).
-- **Mode**: **By Spacing** (fixed spacing, in feet or meters, default 10 ft or 3 m) or **By Count** (fixed number). The Value field keeps one stored value for each mode.
-- **Value**: the spacing or the count, depending on Mode.
+- **Mode**: **By Spacing** (fixed spacing, in feet or meters, default 10 ft or 3 m) or **By Count** (fixed number). The row below keeps one stored value for each mode.
+- **Spacing / Count**: the row is named after the Mode, so it says Spacing in By Spacing and Count in By Count.
 - **Seed**: controls only which object each position takes from the pool of source objects (the pool pick). It has its own re-roll button and is independent of the Scale, Rotate and Offset seeds below.
 - **Avoid Collision**: on by default. A position that would collide is skipped.
 

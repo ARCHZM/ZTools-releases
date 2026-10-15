@@ -19,13 +19,16 @@ Not for:
 4. **Bake** creates the real geometry. **Cancel** discards the preview.
 5. To change a baked railing, select it and run `zRailingSideEdit` (see Good to know for the limits).
 
+## LAYOUT
+
+- **System**: the infill. Baluster, Cable, Glass or Metal. Only Glass and Metal can be switched to frameless (by turning the post switch in DIVISION > POST off).
+- **Flip In/Out**: which side of the reference curve the railing is built on. Hover its name to see a drawing of Off and On.
+
 ## GENERAL
 
 - Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Each system keeps its own values.
-- **System**: the infill. Baluster, Cable, Glass or Metal. Only Glass and Metal can be switched to frameless (by turning the post switch in DIVISION > POST off).
 - **Height**: the total railing height, measured from the reference curve to the top of the top rail.
 - **Below Slab**: how far the posts or the frameless glass wall reach down below the reference curve to cover the slab edge. It affects only the part below the curve. The top rail height, handrail and everything above the curve stay as they are.
-- **Flip In/Out**: which side of the reference curve the railing is built on. Hover its name to see a drawing of Off and On.
 
 ## DIVISION > POST
 
@@ -80,7 +83,7 @@ The heading is a switch. In frameless glass wall mode it is forced off and canno
 - **Section**: the bottom rail cross-section.
 - **Clearance** (clearance above the floor): meaningful only for framed railings with the bottom rail on.
 
-## RAIL > HANDRAIL
+## HANDRAIL
 
 The heading is a switch for a separate accessible handrail. When open:
 

@@ -10,15 +10,15 @@ Use it to check height differences on a site, find slopes that are too steep, se
    The objects are fixed before the window opens. To analyze different objects, close the window and run the command again.
 2. The window opens with three analysis points already placed: **High**, **Low** and **Average**.
 3. Switch between **Elevation**, **Slope** and **Aspect** in **SETUP**. The colors update in the viewport right away. Statistics appear at the top right of the viewport and the legend at the bottom left.
-4. To read more values, click **+** at the top right of the **ANALYZE POINTS** table and click on the model. Click as many points as you like and press **Enter** to finish.
-5. Adjust colors in **DISPLAY**, labels in **LABELS** and mesh quality in **MESH**.
+4. To read more values, click **+** at the top right of the **ANALYSIS POINTS** table and click on the model. Click as many points as you like and press **Enter** to finish.
+5. Adjust mesh detail in **SETUP** and colors and labels in **DISPLAY**.
 6. Press **Bake** to turn what you see into real geometry. The window stays open, so you can switch the analysis and bake again. **Export PNG** saves the viewport as an image, **Reset** restores the defaults, and **Close** closes the window.
 
 ## The window
 
-From top to bottom: **ANALYZE POINTS** across the full width, then **SETUP** and **LABELS** on the left and **DISPLAY**, **MESH** and **EXPORT** on the right, and the buttons **Reset**, **Bake** and **Close** at the bottom. **Export PNG** is inside the EXPORT card. The width is fixed. You can make the window taller, and only the points table grows.
+From top to bottom: **ANALYSIS POINTS** across the full width, then **SETUP** on the left and **DISPLAY** and **EXPORT** on the right, and the buttons **Reset**, **Bake** and **Close** at the bottom. **Export PNG** is inside the EXPORT card. The width is fixed. You can make the window taller, and only the points table grows.
 
-## ANALYZE POINTS
+## ANALYSIS POINTS
 
 Each row is one point. From left to right:
 
@@ -86,20 +86,13 @@ Colors each face by the direction it slopes down towards: north blue, east green
 - **Arrow Density**: how many arrows to place along the longer side of the site. The default is 21. A larger number gives more arrows.
 - **Arrows on Surface**: on by default. Places evenly spread arrows over the surface that point downhill and turn smoothly with the terrain. Flat ground (under 1%) has no arrows.
 
-## MESH
+### Mesh detail (all metrics)
 
 **Detail** is a whole number from 1 to 10. The default is 8. It sets how fine the analysis mesh is. Higher is finer and slower.
 
 - For ordinary curved surfaces, the analysis mesh is a regular grid of four-sided cells, from 16 cells along the long side at level 1 up to 220 at level 10. There are no triangles.
 - For other geometry (trimmed surfaces, meshes) a higher number gives a finer mesh.
 - On a very large site with a very dense mesh (more than 200,000 faces) and Detail above 5, the contour lines are computed from the Detail 5 mesh so they stay fast. Colors and aspect still use the fine mesh.
-
-## LABELS
-
-- LABELS **Size**: the text size of the labels, in the viewport and in baked text.
-- **Decimals**: the number of decimal places in values.
-- **Arrow size**: the length of the downslope arrow at each point, in screen pixels. The default is 38.
-- LABELS **Height**: how far a point's label is raised above the point. The default is 100. It applies in the viewport and when baking.
 
 ## DISPLAY
 
@@ -108,6 +101,13 @@ Colors each face by the direction it slopes down towards: north blue, east green
 - **Blur Gradient**: smooths the colors inside each cell. Off shows one flat color per cell, so you can read the exact value of each cell. Not available in Aspect.
 - **Show Colors**: turn it off to show your original objects normally.
 - **North Arrow**: shows a north arrow at the bottom right of the viewport. On by default, and it is included in exported images.
+
+### Labels
+
+- DISPLAY **Label Size**: the text size of the labels, in the viewport and in baked text.
+- **Decimals**: the number of decimal places in values.
+- **Arrow size**: the length of the downslope arrow at each point, in screen pixels. The default is 38.
+- DISPLAY **Label Height**: how far a point's label is raised above the point. The default is 100. It applies in the viewport and when baking.
 
 ## EXPORT
 

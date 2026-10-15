@@ -15,7 +15,7 @@ Not for:
 
 1. Run `zWindow`.
 2. Pick the wall first (you can pick a single face of a multi-face Brep), then pick a **closed** curve for the opening.
-3. The dialog opens with a live preview. Adjust **LAYOUT** and the **FRAME**, **SASH** (**BEAD** for Fixed) and **GLASS** cards.
+3. The dialog opens with a live preview. Adjust **LAYOUT**, **DIVISION** and the **FRAME**, **SASH** (**BEAD** for Fixed) and **GLASS** cards.
 4. **Bake** cuts the opening in the wall (a Boolean difference with the actual shape of your curve) and then creates the window geometry. **Cancel** discards the preview and the wall is not cut.
 5. To change a baked window, select it and run `zWindowEdit`. See Good to know for the limits.
 
@@ -23,7 +23,7 @@ Not for:
 
 - Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window.
 - **Type**: how the window opens. Hover its name to see a drawing of the four types.
-  - **Fixed**: does not open, and works with any outline. The related fields in DIMENSIONS are labeled **Bead** instead of **Sash**.
+  - **Fixed**: does not open, and works with any outline. The related fields in the SASH card are labeled **Bead** instead of **Sash**.
   - **Hung**: the lower sash slides up.
   - **Casement**: swings out on a hinge.
   - **Sliding**: the moving sash slides sideways.
@@ -31,11 +31,15 @@ Not for:
 - **Hinge / Slide**: Casement and Sliding only. For Casement it is the side of the hinge. For Sliding it is the direction the moving sash slides. Not used by Hung or Fixed.
 - **Open Amount**: non-Fixed types only. It shows the open state in the preview and in renders. It does **not** change the baked structure. Hover its name to see how it works for the current type: how far the lower sash rises (Hung), the swing angle (Casement, 100 means 90 degrees) or the slide distance (Sliding).
 
+## DIVISION
+
+Where the window is cut into cells: side-by-side units, a transom piece above, and the glass grid.
+
 ### Horizontal Split (collapsible)
 
 The heading is a switch that divides the window into several side-by-side windows (adding vertical mullions). When open:
 
-- **Amount**: 2 to 8 windows. If Transom is also on, the split applies only to the main window below the transom bar.
+- **Count**: 2 to 8 windows. If Transom is also on, the split applies only to the main window below the transom bar.
 
 ### Transom (collapsible)
 
@@ -49,6 +53,11 @@ The heading is a switch that adds a horizontal bar with a fixed transom window a
 - **Ray Count**: shown only for Fan. 1 to 12 bars, spread evenly over the angle of the arc.
 - **Hub Ring** (checkbox, on by default): Fan only. Whether the bars meet at a small ring or directly at the center.
 
+### Glass Split (collapsible)
+
+- **Rows**: the number of horizontal cells the glass is divided into. 1 means no division, 2 means one horizontal bar splits the glass in two, and so on. The default is 2. (Since 2026-09-06 this is a cell count. Before that it counted the bars.)
+- **Cols**: the number of vertical cells, with the same meaning as Rows. The default is 2.
+
 ## FRAME, SASH and GLASS
 
 - FRAME **Width**: how far the outer frame is offset inward in the plane of the wall.
@@ -56,16 +65,11 @@ The heading is a switch that adds a horizontal bar with a fixed transom window a
 - **Sash Width / Bead Width**: the sash width for non-Fixed types. For Fixed it becomes the bead width (the same field with a different label).
 - **Sash Depth / Bead Depth**: the depth along the wall normal. Always at most half of the FRAME Depth.
 - GLASS **Thickness**: the thickness of the glass.
-### Glass Split (in the GLASS card)
-
-- **Rows**: the number of horizontal cells the glass is divided into. 1 means no division, 2 means one horizontal bar splits the glass in two, and so on. The default is 2. (Since 2026-09-06 this is a cell count. Before that it counted the bars.)
-- **Cols**: the number of vertical cells, with the same meaning as Rows. The default is 2.
-
 ## How the settings work together
 
 - **If the outline does not support operable types, Type is locked to Fixed.** Hung, Casement, Sliding, divisions and transoms work only when the outline is exactly 4 straight edges (a rectangle) or 3 straight edges plus 1 arc (an arched rectangle). Circles, ellipses, triangles and other shapes can only be Fixed, but still get a frame and glass.
 - **Sliding with an arched outline forces Transom on.** See above.
-- **Switching Type changes the Sash or Bead label and default values in DIMENSIONS.** Switching to Fixed resets the bead defaults, and switching to any other type resets the sash defaults.
+- **Switching Type changes the Sash or Bead card title and default values.** Switching to Fixed resets the bead defaults, and switching to any other type resets the sash defaults.
 - **The Transom options depend on the outline.** A straight-sided outline shows Split At, an outline with an arc shows Spring Offset, only a true semicircle shows Arc Style, and only Arc Style = Fan shows Ray Count and Hub Ring.
 
 ## Good to know

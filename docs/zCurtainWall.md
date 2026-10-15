@@ -15,49 +15,53 @@ Not for:
 ## Quick start
 
 1. Run `zCurtainWall` and pick one or more path curves (see Good to know).
-2. The dialog opens with a live preview. The left column has **LAYOUT** and **DIVISION**. The right column has **DIMENSIONS**, which contains PANEL, MULLION and TRANSOM sections.
-3. In **LAYOUT**, choose **Story**: Single (type a Height) or Multiple (use the Ground / Typical floor table and a Slab Thickness).
-4. In **DIVISION**, set MULLION **Division** (Even or Fixed) and MULLION **Spacing** for the mullion spacing. In the TRANSOM section, add custom transom rows if you want them.
-5. In **DIMENSIONS**, set the glass thickness (PANEL) and the width and depth of the mullions and transoms, with their Silicone and Cap switches.
+2. The dialog opens with a live preview. The left column has **LAYOUT**, **GENERAL**, **DIVISION** and **GLASS**. The right column has the **MULLION** and **TRANSOM** cards (the member sizes).
+3. In **LAYOUT**, choose **Story**: Single or Multiple. In **GENERAL**, type the Height (Single) or fill the Ground / Typical floor table and the Slab Thickness (Multiple).
+4. In **DIVISION**, set the COLUMNS **Division** (Even or Fixed) and COLUMNS **Spacing** for the bay width. In the ROWS section, add custom transom rows if you want them.
+5. In the **GLASS**, **MULLION** and **TRANSOM** cards, set the glass thickness and the width and depth of the mullions and transoms, with their Silicone and Cap switches.
 6. If the path curves you picked still exist in the document, you can drag their control points in the viewport and the preview follows.
 7. **Bake** creates the real geometry (including a hidden anchor curve of the path, so that `zCurtainWallEdit` can detect if you moved the wall). **Cancel** discards the preview.
 8. To change a baked curtain wall, select any part of it and run `zCurtainWallEdit`. It rebuilds the path and every setting from what was stored at bake time and reopens the same dialog. Bake deletes the old parts and builds new ones. The rebuilt path is not a real viewport object, so you cannot drag its control points, and it works only while the picked part still carries its identity mark (it has not been exploded).
 
 ## LAYOUT
 
-- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Values are converted to the document units on bake.
 - **Story** (Single / Multiple): how many storeys the wall covers.
-  - **Single**: a **Height** field gives the total wall height.
-  - **Multiple**: shows a Typical row and a Ground row (each with **FFH**, the floor-to-floor height, and **Count**, the number of repeats) plus a **Slab Thickness** field. Ground is the lowest storey (Count is normally 1, and Z = 0 starts at its floor). Typical is the standard storey stacked above Ground. The total height is the sum of all storeys, so you no longer type a Height. A Typical Count of 0 is allowed and means only the Ground storey.
-- **Slab Thickness** (Multiple only, default 24 in / 609.6 mm): when above 0, every storey boundary (including the one just below the top edge) gets an extra forced transom at Slab Thickness below the boundary transom, representing the underside of the floor slab. The glass between the two transoms is classed as **spandrel** glass, on its own layer and color. Normal vision glass is not affected. Set it to 0 to skip spandrel glass completely.
+  - **Single**: one floor (the **Height** is in GENERAL).
+  - **Multiple**: stacks the floor table in GENERAL (a Typical row and a Ground row (each with **FFH**, the floor-to-floor height, and **Count**, the number of repeats) plus a **Slab Thickness** field. Ground is the lowest storey (Count is normally 1, and Z = 0 starts at its floor). Typical is the standard storey stacked above Ground. The total height is the sum of all storeys, so you no longer type a Height. A Typical Count of 0 is allowed and means only the Ground storey.
 - **Flip In/Out**: the path you pick is the centerline of the glass itself. By default the mullions are on the interior side and the caps on the exterior side. Tick this to swap the two sides. It only affects the depth direction, not widths or heights. Hover its name to see a drawing of Off and On.
 - **Linearize Path**: on by default. At the soft polyline nodes that the tool creates when it breaks up a smooth curve, transoms, caps, silicone joints and glass or spandrel panels are cut as straight rectangles, one per bay. When off, these parts follow the real bend at every internal node with zero-width miters, so the transoms and glass hug the curve continuously. Mullions, mullion caps and mullion silicone always stay straight rectangles, whatever this setting is. Hover its name to see a drawing of Off and On.
 
+## GENERAL
+
+- Lengths follow the global unit system (see [zUnits](zUnits.md)): inches in Imperial, millimeters in Metric. There is no unit switch in this window. Values are converted to the document units on bake.
+- **Height** (Single story): the total wall height.
+- **Slab Thickness** (Multiple only, default 24 in / 609.6 mm): when above 0, every storey boundary (including the one just below the top edge) gets an extra forced transom at Slab Thickness below the boundary transom, representing the underside of the floor slab. The glass between the two transoms is classed as **spandrel** glass, on its own layer and color. Normal vision glass is not affected. Set it to 0 to skip spandrel glass completely.
+
 ## DIVISION
 
-Two collapsible headings, **MULLION** and **TRANSOM**. They collapse only and have no on/off switch.
+Where the wall is cut into cells. Two collapsible headings, **COLUMNS** (vertical bays) and **ROWS** (horizontal custom rows). They collapse only and have no on/off switch.
 
-### MULLION
+### COLUMNS
 
-- MULLION **Division** (Even / Fixed): how the width of each bay is decided.
+- COLUMNS **Division** (Even / Fixed): how the width of each bay is decided.
   - **Even**: fits a whole number of bays and shares the remainder equally among them.
-  - **Fixed**: every bay is exactly MULLION Spacing, and the last bay may be shorter.
-- MULLION **Spacing**: the target mullion spacing. In Even mode, an `-> actual: X` hint under it shows the real spacing.
+  - **Fixed**: every bay is exactly COLUMNS Spacing, and the last bay may be shorter.
+- COLUMNS **Spacing**: the target bay width (the mullion spacing). In Even mode, an `-> actual: X` hint under it shows the real spacing.
 
-### TRANSOM
+### ROWS
 
 The custom division table is the only way to divide vertically. There is no Count or Spacing mode.
 
 - **Single story**: one flat table. Each row has a **Height** (measured from the bottom of the wall, that is the Z of the input curve) and a **Pattern**: a comma-separated string like `0,1,0`, in the style of Grasshopper, applied around the bays. Empty means every bay is enabled. `0` means no transom in that bay (the glass continues through), any other number means enabled. Click **+ Add Row** to add a row. Each row has a drag handle on the left for ordering and a delete button on the right.
 - **Multiple stories**: one combined Ground + Typical table. Each row has an extra **Scope** column (a G / T switch) to the left of Height. Height here is measured from the bottom of the storey the row belongs to, not from the bottom of the whole wall. A row with Scope = G applies once, to the Ground storey. A row with Scope = T is repeated on every Typical storey above Ground, from the bottom of each storey. If a row falls close to a storey boundary (or the spandrel transom under a slab), the storey boundary or slab row wins, and a custom row that is too close is merged or ignored.
 
-## DIMENSIONS
+## GLASS, MULLION and TRANSOM
 
-One group box with three sections in this order: PANEL, MULLION, TRANSOM.
+The member sizes. GLASS sits at the bottom of the left column, MULLION and TRANSOM fill the right column.
 
-### PANEL
+### GLASS
 
-- PANEL **Thickness** (default 12 mm / 0.5 in): the thickness of the glass panel, offset inward from the frame surface.
+- GLASS **Thickness** (default 12 mm / 0.5 in): the thickness of the glass panel, offset inward from the frame surface.
 
 ### MULLION (the heading is a switch for the vertical members, on by default)
 
