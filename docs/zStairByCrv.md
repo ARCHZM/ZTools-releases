@@ -59,7 +59,7 @@ Not for:
 
 - **Going** (formerly Tread D): the horizontal depth of each step, measured along the path. It depends on Rise Mode. In Fixed Going it is the value you type and it applies as is. In Fit Curve it is grayed out and shows the derived value. A sensible range is about 10 in to 12 in (default 11 in).
 - **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Shown only for Plank.
-- TREAD **Thickness**: the tread thickness, from 0.5 in to 2 in, default 1 in. Shown only for Plank.
+- TREAD **Thickness**: the tread thickness, default 1 in (the slider covers 0.5 in to 2 in; it can be 0 or larger). Shown only for Plank.
 
 ## DIMENSIONS > MONOLITHIC
 
@@ -81,8 +81,8 @@ The heading is a switch that controls whether landings are made at corners or wh
 
 The heading is a switch for solid sloping stringers on both sides of the stair. With Type = Ramp this switch is forced off and cannot be turned on. When open:
 
-- STRINGER **Thickness**: the stringer thickness, 0.1 in to 4 in.
-- STRINGER **Depth**: how deep the stringer reaches below the nosing line, 9 in to 24 in, default 12 in. In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
+- STRINGER **Thickness**: the stringer thickness (the slider covers 0.01 in to 4 in; it can be 0 or larger).
+- STRINGER **Depth**: how deep the stringer reaches below the nosing line, default 12 in (the slider covers 9 in to 24 in; it can be 0 or larger). In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
 
 ## DIMENSIONS > RAILING PROFILE (collapsible)
 

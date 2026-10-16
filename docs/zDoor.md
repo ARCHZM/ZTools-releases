@@ -52,7 +52,7 @@ The transom and sidelight frames share one continuous system of vertical and hor
 
 When on, a rectangular glass window is cut out of each leaf (a Boolean cut from the solid slab, not added on). When off, the five fields stay visible but are grayed out. Collapsing is separate and is controlled only by the small icon next to the heading.
 
-- GLASS **Thickness**: the glass thickness, 0.50 in by default and adjustable from 0.25 in to 1.00 in. It is independent of GENERAL Thickness (the glass is centered in the leaf's thickness band and is not necessarily as thick as the slab).
+- GLASS **Thickness**: the glass thickness, 0.50 in by default and at least 0.25 in (the slider covers 0.25 in to 1.00 in, and you can type more). It is independent of GENERAL Thickness (the glass is centered in the leaf's thickness band and is not necessarily as thick as the slab).
 - **Inset Left / Right / Top / Bottom**: the margin from the glass edge to the matching edge of the leaf. The four values are independent. For Double, Left and Right of the right leaf are mirrored automatically, so both windows are symmetric about the center joint.
 
 ## HANDLE (collapsible, no switch)
@@ -63,8 +63,8 @@ Every door always has a handle, front and back of each leaf. There is no "off" o
   - **Lever**: a 1.5 in round rose with a 4 in stepped grip.
   - **Round Pull**: one continuous bent tube in a D shape, with a default 9 in mounting spacing.
   - **C-Shape Pull**: a round-tube pull with a 90 degree offset in the plane, default 8 in mounting spacing.
-  - **Ladder Pull**: one main vertical tube and two short posts that fix it to the door. Length defaults to 66 in (filled in automatically when you switch to this style, maximum 66 in).
-  - **L-Shape Pull**: one L-shaped main tube (a vertical run and a horizontal foot with a rounded bend) and four short posts. Length defaults to 30 in and has a maximum of 36 in (the only style with a different limit). The horizontal foot length is worked out from the door width automatically (from the bend to the opposite jamb with 2.5 in left over), so you do not set it.
+  - **Ladder Pull**: one main vertical tube and two short posts that fix it to the door. Length defaults to 66 in (filled in automatically when you switch to this style; the slider ends at 66 in and you can type more).
+  - **L-Shape Pull**: one L-shaped main tube (a vertical run and a horizontal foot with a rounded bend) and four short posts. Length defaults to 30 in and its slider ends at 36 in (the only style with a different slider end); a longer value is limited only by the door height. The horizontal foot length is worked out from the door width automatically (from the bend to the opposite jamb with 2.5 in left over), so you do not set it.
 - **Height**: the height of the handle center, measured from the floor.
 - **Length**: shown only for Round Pull, C-Shape Pull, Ladder Pull and L-Shape Pull. The overall length of the handle in the vertical direction (the center to center mounting spacing).
 

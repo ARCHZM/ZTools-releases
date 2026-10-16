@@ -22,7 +22,7 @@ A separate row at the top has three presets, **Tiny**, **Small** and **Large Obj
 ## DIMENSION
 
 - **Label Offset**: how far the text is offset from the dimensioned object. Hover its name to see a drawing.
-- **Extension Line**: how far the extension lines go beyond the dimension line. Unlike the other size fields, its hard upper limit is fixed at 4.00 and is the same for all three presets. Hover its name to see a drawing.
+- **Extension Line**: how far the extension lines go beyond the dimension line. Like the other size fields it has no upper limit (the slider ends at 48 in or 1200 mm and you can type more), and it may be 0. Hover its name to see a drawing.
 - **Arc Offset** (with a checkbox): tick it to give arcs their own offset, different from straight segments. When it is not ticked, Label Offset is used.
 
 ## ARROW

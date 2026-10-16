@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Number fields no longer stop you from typing a large length: the slider range stays, but you can type beyond it. This lifts the old caps in `zCurtainWall` (Height, Spacing, Glass Thickness, mullion, transom, cap and silicone sizes), `zDoor` (Width, Pull Length), `zRailing` and `zRailingSide` (Height), `zAnalyzeView` and `zAnalyzeViewQuality` (View Range) and `zDimLength` (Extension Line).
+- Offsets and thin parts may be 0: dimension offsets, stair slab, ramp and stringer sizes, the `zWindowCorner` sash, the `zRailing` Offset (now 0 or more), mansard Break Inset, `zAnalyzeView` Elevation.
+- `zWindow` Rows and Columns go up to 50, `zArrayBetween` Count starts at 2, `zAnalyzeTerrain` Primary Contour goes up to 100, `zSetCamera` viewport size is 1 to 16384.
+
 ## 0.2.3
 
 - Hover drawings: every callout curve now runs from its label straight to the side the arrow arrives from, without loops around the drawing; labels move above, below or beside the dimension when needed. The door leaf **Thickness** drawing shows the leaf swung open so the dimension sits clear of the walls.

@@ -49,19 +49,19 @@ Not for:
 
 ## DIMENSIONS > GENERAL
 
-- **Height**: the total height to climb in Single mode, about 120 in to 240 in (default 180 in). A larger value gives more steps and a longer stair. A very small value may give only one or two steps.
+- **Height**: the total height to climb in Single mode, default 180 in (the slider covers about 120 in to 240 in, and you can type a larger value). A larger value gives more steps and a longer stair. A very small value may give only one or two steps.
 - **Width**: the stair width, constant along the stair. About 36 in is common for houses and 48 in or more for public buildings. A very small value can make the stringer and rail inset look cramped.
 
 ## DIMENSIONS > RISER
 
 - RISER **Height** (target riser height): the step height you want. The tool divides the total height by this value and rounds to get the number of steps, then divides the total height by that number to get the real riser height. So **the final height of each step is not exactly the number you typed**, it is adjusted by rounding, usually only a little. A sensible range for houses is about 6.5 in to 7.5 in. Too high gives steep steps, too low gives more steps and a longer stair.
-- RISER **Thickness**: the thickness of the riser board, 0.1 in to 4 in. Shown only for Plank.
+- RISER **Thickness**: the thickness of the riser board (the slider covers 0 in to 4 in; it can be larger). Shown only for Plank.
 
 ## DIMENSIONS > TREAD
 
 - **Going** (formerly Tread D): the horizontal depth of each step. A sensible range is about 10 in to 12 in (default 11 in). Too small feels cramped and may trigger a code warning. Too large uses more floor space.
 - **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Shown only for Plank.
-- TREAD **Thickness**: the tread thickness, 0.5 in to 2 in, default 1 in. Shown only for Plank.
+- TREAD **Thickness**: the tread thickness, default 1 in (the slider covers 0.5 in to 2 in; it can be 0 or larger). Shown only for Plank.
 
 ## DIMENSIONS > MONOLITHIC
 
@@ -85,8 +85,8 @@ The heading is a switch.
 
 The heading is a switch for solid sloping stringers (the structural beams under the steps) on both sides. With Type = Ramp it is forced off and cannot be turned on. It can be turned on again after switching to Plank or Monolithic. When open:
 
-- STRINGER **Thickness**: the stringer thickness, 0.1 in to 4 in.
-- STRINGER **Depth**: how deep the stringer reaches below the nosing line, 9 in to 24 in, default 12 in. In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
+- STRINGER **Thickness**: the stringer thickness (the slider covers 0.01 in to 4 in; it can be 0 or larger).
+- STRINGER **Depth**: how deep the stringer reaches below the nosing line, default 12 in (the slider covers 9 in to 24 in; it can be 0 or larger). In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
 
 ## DIMENSIONS > RAILING PROFILE (collapsible)
 

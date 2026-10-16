@@ -36,7 +36,7 @@ Not for:
 
 ## DIMENSIONS > GENERAL
 
-- **Height**: the total height to climb in Single mode, about 120 in to 240 in (default 180 in).
+- **Height**: the total height to climb in Single mode, default 180 in (the slider covers about 120 in to 240 in, and you can type a larger value).
 - **Width**: the radial width of the stair, from the inner to the outer circle. A very small value can make the stringer and rail inset look cramped.
 
 ## DIMENSIONS > RISER
@@ -48,7 +48,7 @@ Not for:
 
 - **Going** (formerly Tread D): the horizontal depth of each step, measured at the inner circle. **This is the only input that drives the final radius.** There is no separate radius setting. The tool solves for a radius that gives your Going. If no radius can reach the Going you asked for with the current number of steps, the radius is pinned at its lower limit and a note is shown (it does not stop with an error).
 - **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Ignored in Monolithic mode.
-- TREAD **Thickness**: the tread thickness, 0.5 in to 2 in, default 1 in.
+- TREAD **Thickness**: the tread thickness, default 1 in (the slider covers 0.5 in to 2 in; it can be 0 or larger).
 
 ## DIMENSIONS > MONOLITHIC
 
@@ -69,8 +69,8 @@ The heading is a switch that controls whether landings are made when the code li
 
 The heading is a switch for solid stringers on the inner and outer sides. With Type = Ramp it is forced off and cannot be turned on. When open:
 
-- STRINGER **Thickness**: the stringer thickness, 0.01 in to 4 in. It also shifts the real radius of the rail position (with a stringer, the rail follows the stringer).
-- STRINGER **Depth**: the structural depth of the stringer, measured down from the nosing line, 9 in to 24 in, default 12 in. A spiral stringer lies outside the inner and outer radius and does not overlap the stepped block in plan, so unlike the other two stair tools it needs no cap. Any depth is safe.
+- STRINGER **Thickness**: the stringer thickness (the slider covers 0.01 in to 4 in; it can be 0 or larger). It also shifts the real radius of the rail position (with a stringer, the rail follows the stringer).
+- STRINGER **Depth**: the structural depth of the stringer, measured down from the nosing line, default 12 in (the slider covers 9 in to 24 in; it can be 0 or larger). A spiral stringer lies outside the inner and outer radius and does not overlap the stepped block in plan, so unlike the other two stair tools it needs no cap. Any depth is safe.
 
 ## DIMENSIONS > RAILING PROFILE (collapsible)
 
