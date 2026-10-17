@@ -29,7 +29,7 @@ Not for:
   - **Multiple**: continuous stairs for several storeys. The Height row becomes a table of **Typical / Ground / Basement** rows (floor-to-floor height and count).
 - **Type**: how the stair is built.
   - **Plank**: separate horizontal treads and vertical risers. Shows TREAD **Thickness** and **Nosing**.
-  - **Monolithic**: one solid stepped block, like a cast-in-place concrete stair. Shows **Slab Thickness**. Nosing is ignored in this mode, with a note.
+  - **Slab**: one solid stepped block, like a cast-in-place concrete stair. Shows **Slab Thickness**. Nosing is ignored in this mode, with a note.
   - **Ramp**: each flight is one continuous spiral slab with no steps. Shows **Ramp Thickness**, and **Stringer is forced off** even if you had turned it on.
 - **Clockwise**: whether the stair climbs clockwise or counter-clockwise. The geometry is always built counter-clockwise first and then mirrored when this is ticked. It changes no dimensions, it is only a direction choice. Hover its name to see a drawing of Off and On.
 - **Trim Platform**: controls how the opening edge of the landing platform is built, trimming away the part of the platform that goes beyond a sensible radial range, so the edge fits the real usable space.
@@ -42,15 +42,15 @@ Not for:
 ## DIMENSIONS > RISER
 
 - RISER **Height** (target riser height): the step height you want. The tool works out the real number of steps and the real riser from it. A sensible range is about 6.5 in to 7.5 in.
-- RISER **Thickness**: the thickness of the riser board. It also affects the angle between steps. Unlike the other two stair tools, RISER Thickness stays editable even in Monolithic mode, because it really takes part in the angular spacing of the spiral.
+- RISER **Thickness**: the thickness of the riser board. It also affects the angle between steps. Unlike the other two stair tools, RISER Thickness stays editable even in Slab mode, because it really takes part in the angular spacing of the spiral.
 
 ## DIMENSIONS > TREAD
 
 - **Going** (formerly Tread D): the horizontal depth of each step, measured at the inner circle. **This is the only input that drives the final radius.** There is no separate radius setting. The tool solves for a radius that gives your Going. If no radius can reach the Going you asked for with the current number of steps, the radius is pinned at its lower limit and a note is shown (it does not stop with an error).
-- **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Ignored in Monolithic mode.
+- **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Ignored in Slab mode.
 - TREAD **Thickness**: the tread thickness, default 1 in (the slider covers 0.5 in to 2 in; it can be 0 or larger).
 
-## DIMENSIONS > MONOLITHIC
+## DIMENSIONS > SLAB
 
 - **Slab Thickness**: the thickness of the stepped block, measured down from the nosing line. It has a dynamic lower limit: when the riser height is small, the smallest allowed Slab Thickness rises automatically so the slab does not cut into the neighboring steps. The default is 6 in, the same as the other stair tools.
 
@@ -80,9 +80,9 @@ The heading is a switch that additionally outputs an inner and outer guide curve
 
 ## How the settings work together
 
-- **Riser T stays editable in Monolithic mode.** The other two stair tools hide it there because it is only a decorative riser board thickness, but here it takes part in the angular spacing, so it applies for every Type.
+- **Riser T stays editable in Slab mode.** The other two stair tools hide it there because it is only a decorative riser board thickness, but here it takes part in the angular spacing, so it applies for every Type.
 - **Going is the only input that drives the radius.** To get a larger or smaller spiral, change Going, Riser or Width, not a radius (there is none). If no radius can satisfy the Going, the tool pins the radius at its minimum and shows a note, and the real tread depth is then smaller than you set.
-- **Type = Ramp forces Stringer off.** Switching back to Plank or Monolithic lets you turn it on again. A ramp also has no discrete steps.
+- **Type = Ramp forces Stringer off.** Switching back to Plank or Slab lets you turn it on again. A ramp also has no discrete steps.
 - **With Landing off, Even and At Height are disabled (grayed).**
 - **With Stringer on, RAILING PROFILE Inset is disabled**, because the rail follows the stringer.
 - **Slab T has a dynamic lower limit** that follows the riser height. Changing Riser or Height can change the smallest allowed Slab Thickness.
@@ -100,4 +100,4 @@ The heading is a switch that additionally outputs an inner and outer guide curve
 - **A manual deformation of a single part is thrown away when you run Edit.** Edit deletes and rebuilds the whole stair, it does not patch parts.
 - **Copying and pasting a baked stair is safe.** The tool recognizes a copy as independent.
 - **If a stored setting is deleted or changed, Edit silently replaces it with the default.** The missing setting is rebuilt with its default, with no message telling you which one changed.
-- **Repeated climbing segments are baked as Rhino blocks.** In Plank construction, the treads, risers and nosings of identical climbing segments (typically every storey) share one block definition, which keeps the file small. Platforms, stringers and railing are ordinary objects. Monolithic and Ramp are not instanced. Use Edit as usual to change the stair. Do not use Block Edit on these blocks.
+- **Repeated climbing segments are baked as Rhino blocks.** In Plank construction, the treads, risers and nosings of identical climbing segments (typically every storey) share one block definition, which keeps the file small. Platforms, stringers and railing are ordinary objects. Slab and Ramp are not instanced. Use Edit as usual to change the stair. Do not use Block Edit on these blocks.

@@ -31,7 +31,7 @@ The tools are grouped like the toolbars. Tools that make geometry from a dialog 
 - **zWindowCorner** - Corner windows and curved facades: a row of fixed windows along a polyline on an existing wall.
 - **zCurtainWall** - Curtain walls with mullions, transoms, glass, silicone and caps along path curves, single or multi-storey.
 - **zDoor** - Single or double doors with frame, glass, handle styles, optional transom and sidelights; cuts the opening when you bake.
-- **zStairByCrv** - Stairs that follow a path curve, as planks, a monolithic slab or a ramp.
+- **zStairByCrv** - Stairs that follow a path curve, as planks, a slab or a ramp.
 - **zStairByRegion** - Straight, L, U, Z or C stairs fitted into a rectangular stair-well outline, single or multi-storey.
 - **zSpiralStair** - Spiral stairs from a straight edge that gives the radius direction.
 - **zRailing** - Railings along curves with baluster, cable, glass, metal or guardrail infill, plus top, intermediate and bottom rails and a handrail.

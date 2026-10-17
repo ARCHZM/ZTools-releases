@@ -34,7 +34,7 @@ Not for:
   - **Multiple**: stairs for several storeys in a row. The Height row is replaced by a table of **Typical / Ground / Basement** rows, each with a floor-to-floor height and a count.
 - **Type**: how the stair is built.
   - **Plank**: separate horizontal treads and vertical risers. DIMENSIONS then also shows TREAD **Thickness**, RISER **Thickness** and **Nosing**.
-  - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**.
+  - **Slab**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**.
   - **Ramp**: no steps, just one continuous sloping ramp. DIMENSIONS then shows **Ramp Thickness**, and the RISER **Height** and RISER **Thickness** rows are hidden because a ramp has no discrete steps.
 - **Reverse Path Direction** (formerly Flip): swaps which end of the path curve the stair starts from, so you do not have to pick again. Hover its name to see a drawing of Off and On.
 - **Retain Path Curvature** (formerly True Arc): when the path has arc segments, whether the tread, riser and landing edges are built from true arcs. Hover its name to see a drawing of Off and On.
@@ -61,9 +61,9 @@ Not for:
 - **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Shown only for Plank.
 - TREAD **Thickness**: the tread thickness, default 1 in (the slider covers 0.5 in to 2 in; it can be 0 or larger). Shown only for Plank.
 
-## DIMENSIONS > MONOLITHIC
+## DIMENSIONS > SLAB
 
-- **Slab Thickness**: the thickness of the monolithic slab, measured down from the nosing line. It is also the thickness of landings.
+- **Slab Thickness**: the thickness of the slab, measured down from the nosing line. It is also the thickness of landings.
 
 ## DIMENSIONS > RAMP
 
@@ -82,7 +82,7 @@ The heading is a switch that controls whether landings are made at corners or wh
 The heading is a switch for solid sloping stringers on both sides of the stair. With Type = Ramp this switch is forced off and cannot be turned on. When open:
 
 - STRINGER **Thickness**: the stringer thickness (the slider covers 0.01 in to 4 in; it can be 0 or larger).
-- STRINGER **Depth**: how deep the stringer reaches below the nosing line, default 12 in (the slider covers 9 in to 24 in; it can be 0 or larger). In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
+- STRINGER **Depth**: how deep the stringer reaches below the nosing line, default 12 in (the slider covers 9 in to 24 in; it can be 0 or larger). In Slab mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
 
 ## DIMENSIONS > RAILING PROFILE (collapsible)
 
@@ -95,7 +95,7 @@ The heading is a switch that additionally outputs a pair of guide curves followi
 - **Rise Mode decides who follows whom.** In Fixed Going, Going is your fixed value and the path is only a direction (a long path is cut short, a short path is extended). In Fit Curve, Going is a read-only derived value and the path length is followed exactly. In both modes Riser is only a target, and the number of steps always comes from Height and Riser.
 - **In Fit Curve, if the derived Going falls below the code minimum, the tool refuses to build.** The preview goes empty, the HUD shows a red error, and closing the dialog bakes nothing. Lengthen the path, reduce the number of steps, or switch to Fixed Going.
 - **Story = Multiple replaces the Height row** with the Typical / Ground / Basement table.
-- **Type shows or hides a whole set of rows.** Plank shows TREAD Thickness, RISER Thickness and Nosing. Monolithic shows only Slab Thickness. Ramp shows only Ramp Thickness, hides Riser and RISER Thickness, and forces Stringer off. Switching back turns Stringer on again.
+- **Type shows or hides a whole set of rows.** Plank shows TREAD Thickness, RISER Thickness and Nosing. Slab shows only Slab Thickness. Ramp shows only Ramp Thickness, hides Riser and RISER Thickness, and forces Stringer off. Switching back turns Stringer on again.
 - **With Landing off, Pick / Unpick, Even and At Height are all disabled (grayed).** They only describe how landings are inserted.
 - **Stringer and Railing Profile:** when Stringer is on, RAILING PROFILE Inset is disabled, because the rail guide then follows the center of the stringer. RAILING PROFILE Inset can be set only when Stringer is off.
 - **Code checks only warn, they never stop you.** If Riser or Going is outside the built-in building code range, a yellow note appears in the viewport HUD, but you can still bake.
@@ -111,4 +111,4 @@ The heading is a switch that additionally outputs a pair of guide curves followi
 - **A manual deformation of a single part is thrown away when you run Edit.** Edit rebuilds the whole stair from the original settings and can only recognize a rigid move or rotation of the whole stair. A part you stretched or scaled is replaced without any warning.
 - **Copying and pasting a baked stair is safe.** The tool recognizes a copy as independent, and editing one does not affect the other.
 - **If a stored setting is deleted or damaged, Edit silently replaces it with the default** and rebuilds. The result may differ from what you set, with no message telling you which setting went back to default.
-- **Repeated flights are baked as Rhino blocks.** In Plank construction, the treads, risers and nosings of flights that are identical (for example every middle storey of a Multiple stair) share one block definition, which keeps the file small. Landings, stringers and the railing guide are ordinary objects. Monolithic and Ramp are not instanced. To change one flight, select it and use Edit as usual. Do not use Block Edit on these blocks, because every identical flight changes with it and Edit rebuilds them anyway.
+- **Repeated flights are baked as Rhino blocks.** In Plank construction, the treads, risers and nosings of flights that are identical (for example every middle storey of a Multiple stair) share one block definition, which keeps the file small. Landings, stringers and the railing guide are ordinary objects. Slab and Ramp are not instanced. To change one flight, select it and use Edit as usual. Do not use Block Edit on these blocks, because every identical flight changes with it and Edit rebuilds them anyway.

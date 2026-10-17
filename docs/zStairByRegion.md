@@ -41,8 +41,8 @@ Not for:
   - **C**: several turns, usually for a stair well enclosed by walls on three or more sides.
 - **Type**: how the stair is built.
   - **Plank**: separate horizontal treads and vertical risers, for timber or steel stair looks. DIMENSIONS then also shows TREAD **Thickness**, RISER **Thickness** and **Nosing**.
-  - **Monolithic**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**, and with **Egress** on also **Tilt**.
-  - **Ramp**: no steps, just one continuous ramp, for accessible ramps and service access. DIMENSIONS then shows **Ramp Thickness**, and **Stringer is forced off** even if you had turned it on. Switching back to Plank or Monolithic turns Stringer on again.
+  - **Slab**: one solid sloping slab, like a cast-in-place concrete stair. DIMENSIONS then shows **Slab Thickness**, and with **Egress** on also **Tilt**.
+  - **Ramp**: no steps, just one continuous ramp, for accessible ramps and service access. DIMENSIONS then shows **Ramp Thickness**, and **Stringer is forced off** even if you had turned it on. Switching back to Plank or Slab turns Stringer on again.
 - **Mirror Stair Flight** (formerly Mirror): flips the whole stair left to right about the perpendicular bisector of the start edge (this changes the turn direction of L, U and Z). Use it to change the hand of the stair. Hover its name to see a drawing of Off and On.
 - **Add Entry Landing** (formerly Egress, available only for multi-storey stairs): builds the stair by the rules for an enclosed exit stair (IBC). The stair hugs the walls, a full-width landing is made at the entrance, and the landings at turns are larger. **It can be turned on only when Story = Multiple.** In Single mode the switch is disabled and forced off.
 - **Trim Underground Geo** (formerly Trim Ground): cuts away the part of the stringers or slab below the stair's own ground level, so the underside sits on the ground. Hover its name to see a drawing of Off and On.
@@ -63,10 +63,10 @@ Not for:
 - **Nosing**: how far the front edge of the tread overhangs the riser. Default 1 in. Shown only for Plank.
 - TREAD **Thickness**: the tread thickness, default 1 in (the slider covers 0.5 in to 2 in; it can be 0 or larger). Shown only for Plank.
 
-## DIMENSIONS > MONOLITHIC
+## DIMENSIONS > SLAB
 
-- **Slab Thickness**: the thickness of the monolithic slab, measured down from the nosing line.
-- **Tilt**: shown only when Type = Monolithic and Egress is on. The backward lean of each riser from vertical (0 to 45 degrees), for the common cast-in-place detail of a slightly slanted riser with a level tread.
+- **Slab Thickness**: the thickness of the slab, measured down from the nosing line.
+- **Tilt**: shown only when Type = Slab and Egress is on. The backward lean of each riser from vertical (0 to 45 degrees), for the common cast-in-place detail of a slightly slanted riser with a level tread.
 
 ## DIMENSIONS > RAMP
 
@@ -83,10 +83,10 @@ The heading is a switch.
 
 ## DIMENSIONS > STRINGER (collapsible)
 
-The heading is a switch for solid sloping stringers (the structural beams under the steps) on both sides. With Type = Ramp it is forced off and cannot be turned on. It can be turned on again after switching to Plank or Monolithic. When open:
+The heading is a switch for solid sloping stringers (the structural beams under the steps) on both sides. With Type = Ramp it is forced off and cannot be turned on. It can be turned on again after switching to Plank or Slab. When open:
 
 - STRINGER **Thickness**: the stringer thickness (the slider covers 0.01 in to 4 in; it can be 0 or larger).
-- STRINGER **Depth**: how deep the stringer reaches below the nosing line, default 12 in (the slider covers 9 in to 24 in; it can be 0 or larger). In Monolithic mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
+- STRINGER **Depth**: how deep the stringer reaches below the nosing line, default 12 in (the slider covers 9 in to 24 in; it can be 0 or larger). In Slab mode it is capped automatically (never more than one riser plus Slab Thickness), so the stringer does not poke through the underside of the slab.
 
 ## DIMENSIONS > RAILING PROFILE (collapsible)
 
@@ -98,7 +98,7 @@ The heading is a switch that additionally outputs a pair of guide curves (inner 
 
 - **Height, Riser and the final number of steps work as one system.** Riser is only a wish. The number of steps is the total height divided by it and rounded, and the real riser is the total height divided by that number. In multi-storey mode each storey can have a different height, so the real riser can differ slightly between storeys. This is normal.
 - **Story = Multiple changes the available styles and the layout.** Style narrows to U and C (L, Straight and Z cannot be stacked), and if you had chosen another style it changes to U. The Height row becomes the Typical / Ground / Basement table.
-- **Type shows or hides a whole set of rows.** Plank shows TREAD Thickness, RISER Thickness and Nosing. Monolithic shows Slab Thickness (and Tilt if Egress is on). Ramp shows Ramp Thickness and forces Stringer off, and switching back turns it on again.
+- **Type shows or hides a whole set of rows.** Plank shows TREAD Thickness, RISER Thickness and Nosing. Slab shows Slab Thickness (and Tilt if Egress is on). Ramp shows Ramp Thickness and forces Stringer off, and switching back turns it on again.
 - **With Landing off, Even and At Height are disabled (grayed).** They only describe how landings are inserted.
 - **Stringer and Railing Profile:** the RAILING PROFILE switch itself is never forced off by Stringer. When Stringer is on, only RAILING PROFILE Inset is grayed out, because the rail guide follows the center of the stringer.
 - **Code checks only warn, they never stop you.** If Riser or Going is outside the built-in building code range (IBC 2018), a yellow note appears in the viewport HUD, but you can still bake. Whether to follow the code is your decision.
@@ -115,4 +115,4 @@ The heading is a switch that additionally outputs a pair of guide curves (inner 
 - **A manual deformation of a single part (a Gumball stretch, a CageEdit) is thrown away when you run Edit.** Edit rebuilds the whole stair from the original settings and can only recognize a rigid move or rotation of the whole stair, not a local stretch. The old parts, with your change, are deleted and replaced, with no warning.
 - **Copying and pasting a baked stair is safe.** The tool recognizes a copy as independent, and editing one does not affect the other.
 - **If a stored setting (user text) of a stair is deleted or changed, Edit silently replaces it with the default** and rebuilds. The result may differ from what you set, with no message telling you which setting went back to default.
-- **Repeated flights are baked as Rhino blocks.** In Plank construction, the treads, risers and nosings of flights that are identical (for example every middle storey of a tall stair) share one block definition, which keeps the file small. Landings and stringers are ordinary objects. Monolithic and Ramp are not instanced. Use Edit as usual to change the stair. Do not use Block Edit on these blocks, because every identical flight changes with it and Edit rebuilds them anyway.
+- **Repeated flights are baked as Rhino blocks.** In Plank construction, the treads, risers and nosings of flights that are identical (for example every middle storey of a tall stair) share one block definition, which keeps the file small. Landings and stringers are ordinary objects. Slab and Ramp are not instanced. Use Edit as usual to change the stair. Do not use Block Edit on these blocks, because every identical flight changes with it and Edit rebuilds them anyway.
